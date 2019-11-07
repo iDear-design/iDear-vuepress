@@ -1,0 +1,21 @@
+{
+  "name": "@ido-design/vuepress-plugin-pagation",
+  "version": "1.0.0",
+  "description": "Pagation plugin for vuepress-theme-ido or other vuepress theme",
+  "keywords": [
+    "vuepress-theme-ido",
+    "pagation",
+    "vuepress"
+  ],
+  "homepage": "https://ido-design.maxiaoqu.com/vuepress-plugin-ido",
+  "bugs": {
+    "url": "https://github.com/ido-design/vuepress-plugin-ido/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ido-design/vuepress-plugin-ido.git"
+  },
+  "license": "MIT",
+  "author": "maxiaoqu <maxiaoqu@163.com>",
+  "main": "index.js"
+}
