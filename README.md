@@ -7,7 +7,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
 
 ## 插件的来源有哪些
 
-### vuepress-reco 组织下的插件
+### vuepress-plugin-ido 组织下的插件
 
 我们开发了一些能够帮助你丰富网站内容的小插件，你可以根据自己的喜好去启用它们。
 
@@ -80,6 +80,17 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
     <td>✔</td>
     <td>RSS 生成插件</td>
   </tr>
+  <tr>
+      <td>
+        <a>bgm-player</a>
+      </td>
+      <td>
+        <NpmLink pkg="@ido-design/vuepress-plugin-bgm-player"/>
+      </td>
+      <td>✖</td>
+      <td>✖</td>
+      <td>背景音乐播放器</td>
+    </tr>
 </table>
 
 ::: warning 注意
