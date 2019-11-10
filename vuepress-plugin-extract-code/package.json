@@ -1,0 +1,31 @@
+{
+  "name": "@ido-design/vuepress-plugin-extract-code",
+  "version": "1.0.4",
+  "description": "Features and code presentation plugin forvuepress-theme-ido or other vuepress theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint-ext": "eslint --ext .js,.vue ./",
+    "eslint-fix": "eslint --fix --ext .js,.vue ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ido-design/vuepress-plugin-ido.git"
+  },
+  "keywords": [
+    "vuepress-theme-ido",
+    "extract-code",
+    "vuepress"
+  ],
+  "author": "maxiaoqu <maxiaoqu@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ido-design/vuepress-plugin-ido/issues"
+  },
+  "homepage": "https://ido-design.maxiaoqu.com/vuepress-plugin-ido",
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.4.0",
+    "eslint-plugin-vue": "^5.2.3"
+  }
+}
