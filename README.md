@@ -90,7 +90,29 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
       <td>✖</td>
       <td>✖</td>
       <td>背景音乐播放器</td>
-    </tr>
+  </tr>
+  <tr>
+    <td>
+      <a>extract-code</a>
+    </td>
+    <td>
+      <NpmLink pkg="@ido-design/vuepress-plugin-extract-code"/>
+    </td>
+    <td>✖</td>
+    <td>✖</td>
+    <td>代码展示插件，可以方便地帮你展示多种代码组合</td>
+  </tr>
+  <tr>
+    <td>
+    <a>kan-ban-niang</a>
+    </td>
+    <td>
+    <NpmLink pkg="@ido-design/vuepress-plugin-kan-ban-niang"/>
+    </td>
+    <td>✖</td>
+    <td>✖</td>
+    <td>看板娘插件，为你的网站添加一个萌萌哒看板娘~</td>
+  </tr>
 </table>
 
 ::: warning 注意
