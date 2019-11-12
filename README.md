@@ -113,6 +113,17 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
     <td>✖</td>
     <td>看板娘插件，为你的网站添加一个萌萌哒看板娘~</td>
   </tr>
+  <tr>
+    <td>
+    <a>screenfull</a>
+    </td>
+    <td>
+    <NpmLink pkg="@ido-design/vuepress-plugin-screenfull"/>
+    </td>
+    <td>✖</td>
+    <td>✖</td>
+    <td>全屏按钮插件</td>
+  </tr>
 </table>
 
 ::: warning 注意
