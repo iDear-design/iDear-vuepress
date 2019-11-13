@@ -19,7 +19,7 @@ Comments plugin for vuepress-theme-ido or other vuepress theme.
 
 ```javscript
 module.exports = {
-  theme: 'reco',
+  theme: 'ido',
   themeConfig: {
     valineConfig: {
       appId: '...',// your appId
@@ -33,7 +33,7 @@ module.exports = {
 
 ```javscript
 module.exports = {
-  theme: 'reco',
+  theme: 'ido',
   plugins: [['@ido-design/comments', {
     solution: 'valine',
     options: {
@@ -50,7 +50,7 @@ module.exports = {
 
 ```javscript
 module.exports = {
-  theme: 'reco',
+  theme: 'ido',
   themeConfig: {
     vssueConfig: {
       platform: 'github',
@@ -67,7 +67,7 @@ module.exports = {
 
 ```javscript
 module.exports = {
-  theme: 'reco',
+  theme: 'ido',
   plugins: [['@ido-design/comments', {
     solution: 'vuess',
     options: {

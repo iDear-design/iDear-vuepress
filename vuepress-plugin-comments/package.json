@@ -1,6 +1,6 @@
 {
   "name": "@ido-design/vuepress-plugin-comments",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Comments plugin for vuepress-theme-ido or other vuepress theme",
   "keywords": [
     "vuepress-theme-ido",
