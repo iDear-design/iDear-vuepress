@@ -1,7 +1,7 @@
 export default {
   data() {
     return {
-      volumeKey: 'reco-bgm-volume'
+      volumeKey: 'ido-bgm-volume'
     }
   },
   methods: {
