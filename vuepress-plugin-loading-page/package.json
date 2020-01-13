@@ -1,19 +1,19 @@
 {
-  "name": "@ido-design/vuepress-plugin-loading-page",
+  "name": "@iu-design/vuepress-plugin-loading-page",
   "version": "1.0.0",
-  "description": "Loading page plugin for vuepress-theme-ido or other vuepress theme",
+  "description": "Loading page plugin for vuepress-theme-iu or other vuepress theme",
   "keywords": [
-    "vuepress-theme-ido",
+    "vuepress-theme-iu",
     "loading-page",
     "vuepress"
   ],
-  "homepage": "https://ido-design.maxiaoqu.com/vuepress-plugin-ido",
+  "homepage": "https://iu-design.maxiaoqu.com/vuepress-plugin-iu",
   "bugs": {
-    "url": "https://github.com/ido-design/vuepress-plugin-ido/issues"
+    "url": "https://github.com/iu-design/vuepress-plugin-iu/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ido-design/vuepress-plugin-ido.git"
+    "url": "git+https://github.com/iu-design/vuepress-plugin-iu.git"
   },
   "license": "MIT",
   "author": "maxiaoqu <maxiaoqu@163.com>",

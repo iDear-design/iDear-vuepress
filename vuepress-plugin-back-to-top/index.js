@@ -15,7 +15,7 @@ module.exports = (options, context) => ({
       VISIBILITY_HEIGHT: visibilityHeight || 400
     }
   },
-  name: '@ido-design/vuepress-plugin-back-to-top',
+  name: '@iu-design/vuepress-plugin-back-to-top',
   enhanceAppFiles: [
     path.resolve(__dirname, './bin/enhanceAppFile.js')
   ],

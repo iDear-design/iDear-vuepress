@@ -1,12 +1,12 @@
-# @ido-design/vuepress-plugin-loading-page
+# @iu-design/vuepress-plugin-loading-page
 
 ## Details
 
-> Loading page plugin for vuepress-theme-ido or other vuepress theme.
+> Loading page plugin for vuepress-theme-iu or other vuepress theme.
 
 |使用位置|值|
 |-|-|
-|plugin name|@ido-design/vuepress-plugin-loading-page|
+|plugin name|@iu-design/vuepress-plugin-loading-page|
 |component name|LoadingPage（主题开发时使用）|
 
 

@@ -1,15 +1,15 @@
-# @ido-design/vuepress-plugin-kan-ban-niang
+# @iu-design/vuepress-plugin-kan-ban-niang
 
 ![demo.png](./images/demo.png)
 
 ## Details
 
-> kan-ban-niang plugin forvuepress-theme-ido or other vuepress theme.  
+> kan-ban-niang plugin forvuepress-theme-iu or other vuepress theme.  
 > Vuepress 看板娘插件
 
 |使用位置|值|
 |-|-|
-|plugin name|@ido-design/vuepress-plugin-kan-ban-niang|
+|plugin name|@iu-design/vuepress-plugin-kan-ban-niang|
 |component name|KanBanNiang（自动出现在页面中，无需添加额外代码）|
 
 ## Buttons

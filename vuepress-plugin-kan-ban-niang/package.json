@@ -1,7 +1,7 @@
 {
-  "name": "@ido-design/vuepress-plugin-kan-ban-niang",
+  "name": "@iu-design/vuepress-plugin-kan-ban-niang",
   "version": "1.0.0",
-  "description": "Kan-ban-niang plugin forvuepress-theme-ido or other vuepress theme",
+  "description": "Kan-ban-niang plugin forvuepress-theme-iu or other vuepress theme",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,18 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ido-design/vuepress-plugin-ido.git"
+    "url": "git+https://github.com/iu-design/vuepress-plugin-iu.git"
   },
   "keywords": [
-    "vuepress-theme-ido",
+    "vuepress-theme-iu",
     "live2D",
     "vuepress"
   ],
   "author": "maxiaoqu <maxiaoqu@163.com>",
   "license": "MIT",
-  "homepage": "https://ido-design.maxiaoqu.com/vuepress-plugin-ido",
+  "homepage": "https://iu-design.maxiaoqu.com/vuepress-plugin-iu",
   "bugs": {
-    "url": "https://github.com/ido-design/vuepress-plugin-ido/issues"
+    "url": "https://github.com/iu-design/vuepress-plugin-iu/issues"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",

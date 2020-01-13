@@ -1,16 +1,16 @@
 <template>
-  <div class="ido-bgm-panel">
+  <div class="iu-bgm-panel">
     <!-- 播放器 -->
     <audio id="bgm" :src="audio[curIndex].url" ref="bgm" @ended="bgmEnded" @canplay="playReady" @timeupdate="timeUpdate"></audio>
     <module-transition :position="floatPosition">
-      <div v-show="isFloat" @click="changeBgmInfo(false)" class="ido-float-box" :style="floatStyle">
+      <div v-show="isFloat" @click="changeBgmInfo(false)" class="iu-float-box" :style="floatStyle">
         <img :src="audio[curIndex].cover">
       </div>
     </module-transition>
     <module-transition>
-      <div class="ido-bgm-box" v-show="!isFloat" :style="panelPosition">
+      <div class="iu-bgm-box" v-show="!isFloat" :style="panelPosition">
         <!-- 封面 -->
-        <div class="ido-bgm-cover" @click="changeBgmInfo(false)" :style="`background-image:url(${audio[curIndex].cover})`">
+        <div class="iu-bgm-cover" @click="changeBgmInfo(false)" :style="`background-image:url(${audio[curIndex].cover})`">
           <!-- mini操作栏 -->
           <div v-show="isMini" class="mini-operation">
             <i v-show="this.curPlayStatus === 'playing' && isMini" @click.stop="pauseBgm" class="ido-bgm ido-bgm-pause"></i>

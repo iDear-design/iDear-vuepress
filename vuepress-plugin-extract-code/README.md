@@ -1,14 +1,14 @@
-# @ido-design/vuepress-plugin-extract-code
+# @iu-design/vuepress-plugin-extract-code
 
 ## Introduce
 
-Features and code presentation plugin forvuepress-theme-ido or other vuepress theme.
+Features and code presentation plugin forvuepress-theme-iu or other vuepress theme.
 
 ![demo](./bin/demo.png)
 
 ### Name
 
-- **As plugin**: `@ido-design/vuepress-plugin-extract-code`
+- **As plugin**: `@iu-design/vuepress-plugin-extract-code`
 
 ## Usage
 
@@ -17,7 +17,7 @@ Features and code presentation plugin forvuepress-theme-ido or other vuepress th
 ```js
 module.exports = {
   plugins: [
-    '@ido-design/extract-code'
+    '@iu-design/extract-code'
   ]
 }
 ```
