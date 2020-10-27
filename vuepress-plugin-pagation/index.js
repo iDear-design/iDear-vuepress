@@ -7,7 +7,7 @@ module.exports = (options, context) => ({
       PERPAGE: perPage
     }
   },
-  name: '@ido-design/vuepress-plugin-pagation',
+  name: '@timi-design/vuepress-plugin-pagation',
   enhanceAppFiles: [
     path.resolve(__dirname, './bin/enhanceAppFile.js')
   ]

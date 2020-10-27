@@ -13,7 +13,7 @@
         <i class="kbnfont kbn-ban-home ban-home" @click="goHome" @mouseenter="hoverGoHome" @mouseleave="resetMessage"></i>
         <i class="kbnfont kbn-ban-message message"></i>
         <i class="kbnfont kbn-ban-close close" @click="closeBanNiang" @mouseenter="hoverCloseBanNiang" @mouseleave="resetMessage"></i>
-        <a target="_blank" href="https://vuepress-theme-iu.recoluan.com/views/plugins/kanbanniang.html">
+        <a target="_blank" href="https://vuepress-theme-timi.recoluan.com/views/plugins/kanbanniang.html">
           <i class="kbnfont kbn-ban-info info" @mouseenter="hoverMoreInfo" @mouseleave="resetMessage" ></i>
         </a>
         <i v-show="myTheme.length > 1" class="kbnfont kbn-ban-theme skin" @click="changeTheme" @mouseenter="hoverChangeTheme" @mouseleave="resetMessage"></i>
@@ -141,7 +141,7 @@ export default {
     },
     initBanNiang () {
       if (this.themeName.indexOf(this.currentTheme) === -1) {
-        console.log('@iu-design/vuepress-plugin-kan-ban-niang不支持主题' + this.currentTheme + ', 请检查主题名, 或前往https://vuepress-theme-iu.recoluan.com/views/plugins/kanbanniang.html 查看支持的主题')
+        console.log('@timi-design/vuepress-plugin-kan-ban-niang不支持主题' + this.currentTheme + ', 请检查主题名, 或前往https://vuepress-theme-timi.recoluan.com/views/plugins/kanbanniang.html 查看支持的主题')
         document.querySelector('.kanbanniang').style.display = 'none'
         return
       }

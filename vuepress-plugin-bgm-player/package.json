@@ -1,5 +1,5 @@
 {
-  "name": "@ido-design/vuepress-plugin-bgm-player",
+  "name": "@timi-design/vuepress-plugin-bgm-player",
   "version": "1.0.0",
   "description": "bgm player plugin for vuepress themes",
   "main": "index.js",
@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ido-design/vuepress-plugin-ido.git"
+    "url": "git+https://github.com/timi-design/vuepress-plugin-timi.git"
   },
   "keywords": [
-    "vuepress-theme-ido",
+    "vuepress-theme-timi",
     "bgm player",
     "vuepress",
     "music player"
@@ -21,9 +21,9 @@
   "author": "maxiaoqu <maxiaoqu@163.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ido-design/vuepress-plugin-ido/issues"
+    "url": "https://github.com/timi-design/vuepress-plugin-timi/issues"
   },
-  "homepage": "https://ido-design.maxiaoqu.com/vuepress-plugin-ido",
+  "homepage": "https://timi-design.maxiaoqu.com/vuepress-plugin-timi",
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "eslint": "^6.4.0",

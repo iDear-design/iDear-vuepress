@@ -1,14 +1,14 @@
-# @ido-design/vuepress-plugin-pagation
+# @timi-design/vuepress-plugin-pagation
 
 ![demo.png](./images/demo.png)
 
 ## Details
 
-> Pagation plugin for vuepress-theme-ido or other vuepress theme.
+> Pagation plugin for vuepress-theme-timi or other vuepress theme.
 
 |使用位置|值|
 |-|-|
-|plugin name|@ido-design/vuepress-plugin-pagation|
+|plugin name|@timi-design/vuepress-plugin-pagation|
 |component name|Pagation（主题开发时使用）|
 
 ## Options

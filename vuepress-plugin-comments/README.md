@@ -1,12 +1,12 @@
-# @ido-design/vuepress-plugin-comments
+# @timi-design/vuepress-plugin-comments
 
 ## Introduce
 
-Comments plugin for vuepress-theme-ido or other vuepress theme.
+Comments plugin for vuepress-theme-timi or other vuepress theme.
 
 ### Name
 
-- **As plugin**: `@ido-design/vuepress-plugin-comments`
+- **As plugin**: `@timi-design/vuepress-plugin-comments`
 - **As component**: `Comments (评论)` / `AccessNumber (使用 Valine 时的访问量)`（主题开发时使用）
 
 ## Option API
@@ -19,7 +19,7 @@ Comments plugin for vuepress-theme-ido or other vuepress theme.
 
 ```javscript
 module.exports = {
-  theme: 'ido',
+  theme: 'timi',
   themeConfig: {
     valineConfig: {
       appId: '...',// your appId
@@ -33,8 +33,8 @@ module.exports = {
 
 ```javscript
 module.exports = {
-  theme: 'ido',
-  plugins: [['@ido-design/comments', {
+  theme: 'timi',
+  plugins: [['@timi-design/comments', {
     solution: 'valine',
     options: {
       appId: '...',// your appId
@@ -50,7 +50,7 @@ module.exports = {
 
 ```javscript
 module.exports = {
-  theme: 'ido',
+  theme: 'timi',
   themeConfig: {
     vssueConfig: {
       platform: 'github',
@@ -67,8 +67,8 @@ module.exports = {
 
 ```javscript
 module.exports = {
-  theme: 'ido',
-  plugins: [['@ido-design/comments', {
+  theme: 'timi',
+  plugins: [['@timi-design/comments', {
     solution: 'vuess',
     options: {
       platform: 'github',

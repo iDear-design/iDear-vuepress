@@ -1,7 +1,7 @@
 {
-  "name": "@iu-design/vuepress-plugin-extract-code",
+  "name": "@timi-design/vuepress-plugin-extract-code",
   "version": "1.0.0",
-  "description": "Features and code presentation plugin forvuepress-theme-iu or other vuepress theme",
+  "description": "Features and code presentation plugin forvuepress-theme-timi or other vuepress theme",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,19 +10,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iu-design/vuepress-plugin-iu.git"
+    "url": "git+https://github.com/timi-design/vuepress-plugin-timi.git"
   },
   "keywords": [
-    "vuepress-theme-iu",
+    "vuepress-theme-timi",
     "extract-code",
     "vuepress"
   ],
   "author": "maxiaoqu <maxiaoqu@163.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iu-design/vuepress-plugin-iu/issues"
+    "url": "https://github.com/timi-design/vuepress-plugin-timi/issues"
   },
-  "homepage": "https://iu-design.maxiaoqu.com/vuepress-plugin-iu",
+  "homepage": "https://timi-design.maxiaoqu.com/vuepress-plugin-timi",
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "eslint": "^6.4.0",

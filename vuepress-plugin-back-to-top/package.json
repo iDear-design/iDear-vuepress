@@ -1,19 +1,19 @@
 {
-  "name": "@iu-design/vuepress-plugin-back-to-top",
+  "name": "@timi-design/vuepress-plugin-back-to-top",
   "version": "1.0.0",
-  "description": "Back-to-top plugin for vuepress-theme-iu or other vuepress theme",
+  "description": "Back-to-top plugin for vuepress-theme-timi or other vuepress theme",
   "keywords": [
-    "vuepress-theme-iu",
+    "vuepress-theme-timi",
     "backtotop",
     "vuepress"
   ],
-  "homepage": "https://iu-design.maxiaoqu.com/vuepress-plugin-iu",
+  "homepage": "https://timi-design.maxiaoqu.com/vuepress-plugin-timi",
   "bugs": {
-    "url": "https://github.com/iu-design/vuepress-plugin-iu/issues"
+    "url": "https://github.com/timi-design/vuepress-plugin-timi/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iu-design/vuepress-plugin-iu.git"
+    "url": "git+https://github.com/timi-design/vuepress-plugin-timi.git"
   },
   "license": "MIT",
   "author": "maxiaoqu <maxiaoqu@163.com>",

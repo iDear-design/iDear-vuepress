@@ -1,7 +1,7 @@
 {
-  "name": "@iu-design/vuepress-plugin-screenfull",
+  "name": "@timi-design/vuepress-plugin-screenfull",
   "version": "1.0.0",
-  "description": "Screenfull plugin forvuepress-theme-iu or other vuepress theme",
+  "description": "Screenfull plugin forvuepress-theme-timi or other vuepress theme",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,18 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iu-design/vuepress-plugin-iu.git"
+    "url": "git+https://github.com/timi-design/vuepress-plugin-timi.git"
   },
   "keywords": [
-    "vuepress-theme-iu",
+    "vuepress-theme-timi",
     "screenfull",
     "vuepress"
   ],
   "author": "reco_luan <recoluan@outlook.com>",
   "license": "MIT",
-  "homepage": "https://iu-design.maxiaoqu.com/vuepress-plugin-iu",
+  "homepage": "https://timi-design.maxiaoqu.com/vuepress-plugin-timi",
   "bugs": {
-    "url": "https://github.com/iu-design/vuepress-plugin-iu/issues"
+    "url": "https://github.com/timi-design/vuepress-plugin-timi/issues"
   },
   "dependencies": {
     "screenfull": "4.2.1"

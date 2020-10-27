@@ -1,7 +1,7 @@
 {
-  "name": "@ido-design/vuepress-plugin-rss",
+  "name": "@timi-design/vuepress-plugin-rss",
   "version": "1.0.0",
-  "description": "RSS plugin only for vuepress-theme-ido.",
+  "description": "RSS plugin only for vuepress-theme-timi.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,19 +10,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ido-design/vuepress-plugin-ido.git"
+    "url": "git+https://github.com/timi-design/vuepress-plugin-timi.git"
   },
   "keywords": [
-    "vuepress-theme-ido",
+    "vuepress-theme-timi",
     "rss",
     "vuepress"
   ],
   "author": "maxiaoqu <maxiaoqu@163.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ido-design/vuepress-plugin-ido/issues"
+    "url": "https://github.com/timi-design/vuepress-plugin-timi/issues"
   },
-  "homepage": "https://ido-design.maxiaoqu.com/vuepress-plugin-ido",
+  "homepage": "https://timi-design.maxiaoqu.com/vuepress-plugin-timi",
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "eslint": "^6.4.0",

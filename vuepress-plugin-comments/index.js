@@ -6,7 +6,7 @@ module.exports = (options, context) => ({
       COMMENTS_OPTIONS: options || null
     }
   },
-  name: '@ido-design/vuepress-plugin-comments',
+  name: '@timi-design/vuepress-plugin-comments',
   enhanceAppFiles: [
     path.resolve(__dirname, './bin/enhanceAppFile.js')
   ]

@@ -1,7 +1,7 @@
 export default {
   data() {
     return {
-      volumeKey: 'iu-bgm-volume'
+      volumeKey: 'timi-bgm-volume'
     }
   },
   methods: {

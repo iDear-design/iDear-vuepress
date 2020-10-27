@@ -1,14 +1,14 @@
-# @iu-design/vuepress-plugin-extract-code
+# @timi-design/vuepress-plugin-extract-code
 
 ## Introduce
 
-Features and code presentation plugin forvuepress-theme-iu or other vuepress theme.
+Features and code presentation plugin forvuepress-theme-timi or other vuepress theme.
 
 ![demo](./bin/demo.png)
 
 ### Name
 
-- **As plugin**: `@iu-design/vuepress-plugin-extract-code`
+- **As plugin**: `@timi-design/vuepress-plugin-extract-code`
 
 ## Usage
 
@@ -17,7 +17,7 @@ Features and code presentation plugin forvuepress-theme-iu or other vuepress the
 ```js
 module.exports = {
   plugins: [
-    '@iu-design/extract-code'
+    '@timi-design/extract-code'
   ]
 }
 ```

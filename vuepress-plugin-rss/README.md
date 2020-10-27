@@ -1,12 +1,12 @@
-# @ido-design/vuepress-plugin-rss
+# @timi-design/vuepress-plugin-rss
 
 ## Introduce
 
-RSS plugin only for vuepress-theme-ido.
+RSS plugin only for vuepress-theme-timi.
 
 ### Name
 
-- **As plugin**: `@ido-design/vuepress-plugin-rss`
+- **As plugin**: `@timi-design/vuepress-plugin-rss`
 
 ## Usage
 
@@ -14,7 +14,7 @@ RSS plugin only for vuepress-theme-ido.
 
 - required: `true`
 - description: 网站地址
-- example: `https://vuepress-theme-ido.recoluan.com`
+- example: `https://vuepress-theme-timi.recoluan.com`
 
 ### copyright
 

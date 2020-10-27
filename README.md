@@ -7,13 +7,13 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
 
 ## 插件的来源有哪些
 
-### vuepress-plugin-ido 组织下的插件
+### vuepress-plugin-timi 组织下的插件
 
 我们开发了一些能够帮助你丰富网站内容的小插件，你可以根据自己的喜好去启用它们。
 
 ::: tip
 
-我们的插件均发布在 `npm` 的组织 `vuepress-ido` 下，所以以下插件默认全称为 `@ido-design/vuepress-plugin-<name>` （比如 `back-to-top` 的完整名称为 `@ido-design/vuepress-plugin-back-to-top`） ，下面将简写组织内插件名称。
+我们的插件均发布在 `npm` 的组织 `vuepress-timi` 下，所以以下插件默认全称为 `@timi-design/vuepress-plugin-<name>` （比如 `back-to-top` 的完整名称为 `@timi-design/vuepress-plugin-back-to-top`） ，下面将简写组织内插件名称。
 
 :::
 
@@ -30,7 +30,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
       <a>back-to-top</a>
     </td>
     <td>
-      <NpmLink pkg="@ido-design/vuepress-plugin-back-to-top"/>
+      <NpmLink pkg="@timi-design/vuepress-plugin-back-to-top"/>
     </td>
     <td>✔</td>
     <td>✖</td>
@@ -41,7 +41,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
       <a>pagation</a>
     </td>
     <td>
-      <NpmLink pkg="@ido-design/vuepress-plugin-pagation"/>
+      <NpmLink pkg="@timi-design/vuepress-plugin-pagation"/>
     </td>
     <td>✔</td>
     <td>✖</td>
@@ -52,7 +52,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
       <a>loading-page</a>
     </td>
     <td>
-      <NpmLink pkg="@ido-design/vuepress-plugin-loading-page"/>
+      <NpmLink pkg="@timi-design/vuepress-plugin-loading-page"/>
     </td>
     <td>✔</td>
     <td>✖</td>
@@ -63,7 +63,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
       <a>comments</a>
     </td>
     <td>
-      <NpmLink pkg="@ido-design/vuepress-plugin-comments"/>
+      <NpmLink pkg="@timi-design/vuepress-plugin-comments"/>
     </td>
     <td>✔</td>
     <td>✖</td>
@@ -74,7 +74,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
       <a>rss</a>
     </td>
     <td>
-      <NpmLink pkg="@ido-design/vuepress-plugin-rss"/>
+      <NpmLink pkg="@timi-design/vuepress-plugin-rss"/>
     </td>
     <td>✖</td>
     <td>✔</td>
@@ -85,7 +85,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
         <a>bgm-player</a>
       </td>
       <td>
-        <NpmLink pkg="@ido-design/vuepress-plugin-bgm-player"/>
+        <NpmLink pkg="@timi-design/vuepress-plugin-bgm-player"/>
       </td>
       <td>✖</td>
       <td>✖</td>
@@ -96,7 +96,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
       <a>extract-code</a>
     </td>
     <td>
-      <NpmLink pkg="@ido-design/vuepress-plugin-extract-code"/>
+      <NpmLink pkg="@timi-design/vuepress-plugin-extract-code"/>
     </td>
     <td>✖</td>
     <td>✖</td>
@@ -107,7 +107,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
     <a>kan-ban-niang</a>
     </td>
     <td>
-    <NpmLink pkg="@ido-design/vuepress-plugin-kan-ban-niang"/>
+    <NpmLink pkg="@timi-design/vuepress-plugin-kan-ban-niang"/>
     </td>
     <td>✖</td>
     <td>✖</td>
@@ -118,7 +118,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
     <a>screenfull</a>
     </td>
     <td>
-    <NpmLink pkg="@ido-design/vuepress-plugin-screenfull"/>
+    <NpmLink pkg="@timi-design/vuepress-plugin-screenfull"/>
     </td>
     <td>✖</td>
     <td>✖</td>
@@ -216,7 +216,7 @@ module.exports = {
 ```javascript
 module.exports = {
   plugins: [
-    ["@ido-design/back-to-top", false] // disabled.
+    ["@timi-design/back-to-top", false] // disabled.
   ]
 };
 ```
