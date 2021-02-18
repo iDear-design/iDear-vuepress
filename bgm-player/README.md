@@ -1,4 +1,4 @@
-# @timi-design/vuepress-plugin-bgm-player
+# @idear-vuepress/bgm-player
 
 ![demo.png](./images/demo.png)
 
@@ -9,7 +9,7 @@
 
 |使用位置|值|
 |-|-|
-|plugin name|@timi-design/vuepress-plugin-bgm-player|
+|plugin name|@idear-vuepress/bgm-player|
 |component name|BgMusic（自动出现在页面中，无需添加额外代码）|
 
 ## Options
