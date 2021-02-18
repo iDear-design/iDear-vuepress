@@ -1,4 +1,4 @@
-# @timi-design/vuepress-plugin-comments
+# @idear-vuepress/comments
 
 ## Introduce
 
@@ -6,7 +6,7 @@ Comments plugin for vuepress-theme-timi or other vuepress theme.
 
 ### Name
 
-- **As plugin**: `@timi-design/vuepress-plugin-comments`
+- **As plugin**: `@idear-vuepress/comments`
 - **As component**: `Comments (评论)` / `AccessNumber (使用 Valine 时的访问量)`（主题开发时使用）
 
 ## Option API
@@ -34,7 +34,7 @@ module.exports = {
 ```javscript
 module.exports = {
   theme: 'timi',
-  plugins: [['@timi-design/comments', {
+  plugins: [['@idear-vuepress/comments', {
     solution: 'valine',
     options: {
       appId: '...',// your appId
@@ -68,7 +68,7 @@ module.exports = {
 ```javscript
 module.exports = {
   theme: 'timi',
-  plugins: [['@timi-design/comments', {
+  plugins: [['@idear-vuepress/comments', {
     solution: 'vuess',
     options: {
       platform: 'github',
