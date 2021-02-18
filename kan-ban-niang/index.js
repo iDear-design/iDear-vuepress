@@ -29,7 +29,7 @@ module.exports = (options, context) => ({
       HEIGHT: height || 220
     }
   },
-  name: '@timi-design/vuepress-plugin-kan-ban-niang',
+  name: '@idear-vuepress/kan-ban-niang',
   enhanceAppFiles: resolve(__dirname, './bin/enhanceAppFile.js'),
   globalUIComponents: 'KanBanNiang'
 })

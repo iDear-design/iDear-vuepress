@@ -1,4 +1,4 @@
-# @timi-design/vuepress-plugin-kan-ban-niang
+# @idear-vuepress/kan-ban-niang
 
 ![demo.png](./images/demo.png)
 
@@ -9,7 +9,7 @@
 
 |使用位置|值|
 |-|-|
-|plugin name|@timi-design/vuepress-plugin-kan-ban-niang|
+|plugin name|@idear-vuepress/kan-ban-niang|
 |component name|KanBanNiang（自动出现在页面中，无需添加额外代码）|
 
 ## Buttons
@@ -51,7 +51,7 @@
 
 ## About
 
-- 参考插件: [@Qi](https://github.com/QiShaoXuan) https://github.com/QiShaoXuan/vuepress-plugin-cat  
+- 参考插件: [@Qi](https://github.com/QiShaoXuan) https://github.com/QiShaoXuan/cat  
 - 模型库： [@Qi](https://github.com/QiShaoXuan) https://github.com/QiShaoXuan/live2DModel
 - 模型加载失败时会自动隐藏
 - 加载静态资源速度不稳定

@@ -1,5 +1,5 @@
 {
-  "name": "@timi-design/vuepress-plugin-kan-ban-niang",
+  "name": "@idear-vuepress/kan-ban-niang",
   "version": "1.0.0",
   "description": "Kan-ban-niang plugin forvuepress-theme-timi or other vuepress theme",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/timi-design/vuepress-plugin-timi.git"
+    "url": "git+https://github.com/timi-design/timi.git"
   },
   "keywords": [
     "vuepress-theme-timi",
@@ -19,9 +19,9 @@
   ],
   "author": "maxiaoqu <maxiaoqu@163.com>",
   "license": "MIT",
-  "homepage": "https://timi-design.maxiaoqu.com/vuepress-plugin-timi",
+  "homepage": "https://timi-design.maxiaoqu.com/timi",
   "bugs": {
-    "url": "https://github.com/timi-design/vuepress-plugin-timi/issues"
+    "url": "https://github.com/timi-design/timi/issues"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
