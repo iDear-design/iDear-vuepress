@@ -1,4 +1,4 @@
-# @timi-design/vuepress-plugin-back-to-top
+# @idear-vuepress/back-to-top
 
 ![demo.png](./images/demo.png)
 
@@ -8,7 +8,7 @@
 
 |使用位置|值|
 |-|-|
-|plugin name|@timi-design/vuepress-plugin-back-to-top|
+|plugin name|@idear-vuepress/back-to-top|
 |component name|BackToTop（自动出现在页面中，无需添加额外代码）|
 
 ## Options
