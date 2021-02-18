@@ -1,4 +1,4 @@
-# @timi-design/vuepress-plugin-extract-code
+# @idear-vuepress/extract-code
 
 ## Introduce
 
@@ -8,7 +8,7 @@ Features and code presentation plugin forvuepress-theme-timi or other vuepress t
 
 ### Name
 
-- **As plugin**: `@timi-design/vuepress-plugin-extract-code`
+- **As plugin**: `@idear-vuepress/extract-code`
 
 ## Usage
 
@@ -17,7 +17,7 @@ Features and code presentation plugin forvuepress-theme-timi or other vuepress t
 ```js
 module.exports = {
   plugins: [
-    '@timi-design/extract-code'
+    '@idear-vuepress/extract-code'
   ]
 }
 ```
