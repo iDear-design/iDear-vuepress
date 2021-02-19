@@ -1,5 +1,5 @@
 {
-  "name": "@timi-design/vuepress-plugin-rss",
+  "name": "@idear-vuepress/rss",
   "version": "1.0.0",
   "description": "RSS plugin only for vuepress-theme-timi.",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/timi-design/vuepress-plugin-timi.git"
+    "url": "git+https://github.com/timi-design/timi.git"
   },
   "keywords": [
     "vuepress-theme-timi",
@@ -20,9 +20,9 @@
   "author": "maxiaoqu <maxiaoqu@163.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/timi-design/vuepress-plugin-timi/issues"
+    "url": "https://github.com/timi-design/timi/issues"
   },
-  "homepage": "https://timi-design.maxiaoqu.com/vuepress-plugin-timi",
+  "homepage": "https://timi-design.maxiaoqu.com/timi",
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "eslint": "^6.4.0",

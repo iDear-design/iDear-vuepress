@@ -1,4 +1,4 @@
-# @timi-design/vuepress-plugin-rss
+# @idear-vuepress/rss
 
 ## Introduce
 
@@ -6,7 +6,7 @@ RSS plugin only for vuepress-theme-timi.
 
 ### Name
 
-- **As plugin**: `@timi-design/vuepress-plugin-rss`
+- **As plugin**: `@idear-vuepress/rss`
 
 ## Usage
 
