@@ -1,7 +1,7 @@
 const { path } = require('@vuepress/shared-utils')
 
 module.exports = (options, context) => ({
-  name: '@timi-design/vuepress-plugin-loading-page',
+  name: '@idear-vuepress/loading-page',
   enhanceAppFiles: [
     path.resolve(__dirname, './bin/enhanceAppFile.js')
   ]

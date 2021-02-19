@@ -1,4 +1,4 @@
-# @timi-design/vuepress-plugin-loading-page
+# @idear-vuepress/loading-page
 
 ## Details
 
@@ -6,7 +6,7 @@
 
 |使用位置|值|
 |-|-|
-|plugin name|@timi-design/vuepress-plugin-loading-page|
+|plugin name|@idear-vuepress/loading-page|
 |component name|LoadingPage（主题开发时使用）|
 
 
