@@ -1,4 +1,4 @@
-# @timi-design/vuepress-plugin-pagation
+# @idear-vuepress/pagation
 
 ![demo.png](./images/demo.png)
 
@@ -8,7 +8,7 @@
 
 |使用位置|值|
 |-|-|
-|plugin name|@timi-design/vuepress-plugin-pagation|
+|plugin name|@idear-vuepress/pagation|
 |component name|Pagation（主题开发时使用）|
 
 ## Options

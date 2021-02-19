@@ -1,5 +1,5 @@
 {
-  "name": "@timi-design/vuepress-plugin-pagation",
+  "name": "@idear-vuepress/pagation",
   "version": "1.0.0",
   "description": "Pagation plugin for vuepress-theme-timi or other vuepress theme",
   "keywords": [
@@ -7,13 +7,13 @@
     "pagation",
     "vuepress"
   ],
-  "homepage": "https://timi-design.maxiaoqu.com/vuepress-plugin-timi",
+  "homepage": "https://timi-design.maxiaoqu.com/timi",
   "bugs": {
-    "url": "https://github.com/timi-design/vuepress-plugin-timi/issues"
+    "url": "https://github.com/timi-design/timi/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/timi-design/vuepress-plugin-timi.git"
+    "url": "git+https://github.com/timi-design/timi.git"
   },
   "license": "MIT",
   "author": "maxiaoqu <maxiaoqu@163.com>",
