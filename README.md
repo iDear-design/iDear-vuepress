@@ -13,7 +13,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
 
 ::: tip
 
-我们的插件均发布在 `npm` 的组织 `vuepress-timi` 下，所以以下插件默认全称为 `@timi-design/vuepress-plugin-<name>` （比如 `back-to-top` 的完整名称为 `@timi-design/vuepress-plugin-back-to-top`） ，下面将简写组织内插件名称。
+我们的插件均发布在 `npm` 的组织 `vuepress-timi` 下，所以以下插件默认全称为 `@idear-vuepress/<name>` （比如 `back-to-top` 的完整名称为 `@idear-vuepress/back-to-top`） ，下面将简写组织内插件名称。
 
 :::
 
@@ -30,7 +30,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
       <a>back-to-top</a>
     </td>
     <td>
-      <NpmLink pkg="@timi-design/vuepress-plugin-back-to-top"/>
+      <NpmLink pkg="@idear-vuepress/back-to-top"/>
     </td>
     <td>✔</td>
     <td>✖</td>
@@ -41,7 +41,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
       <a>pagation</a>
     </td>
     <td>
-      <NpmLink pkg="@timi-design/vuepress-plugin-pagation"/>
+      <NpmLink pkg="@idear-vuepress/pagation"/>
     </td>
     <td>✔</td>
     <td>✖</td>
@@ -52,7 +52,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
       <a>loading-page</a>
     </td>
     <td>
-      <NpmLink pkg="@timi-design/vuepress-plugin-loading-page"/>
+      <NpmLink pkg="@idear-vuepress/loading-page"/>
     </td>
     <td>✔</td>
     <td>✖</td>
@@ -63,7 +63,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
       <a>comments</a>
     </td>
     <td>
-      <NpmLink pkg="@timi-design/vuepress-plugin-comments"/>
+      <NpmLink pkg="@idear-vuepress/comments"/>
     </td>
     <td>✔</td>
     <td>✖</td>
@@ -74,7 +74,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
       <a>rss</a>
     </td>
     <td>
-      <NpmLink pkg="@timi-design/vuepress-plugin-rss"/>
+      <NpmLink pkg="@idear-vuepress/rss"/>
     </td>
     <td>✖</td>
     <td>✔</td>
@@ -85,7 +85,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
         <a>bgm-player</a>
       </td>
       <td>
-        <NpmLink pkg="@timi-design/vuepress-plugin-bgm-player"/>
+        <NpmLink pkg="@idear-vuepress/bgm-player"/>
       </td>
       <td>✖</td>
       <td>✖</td>
@@ -96,7 +96,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
       <a>extract-code</a>
     </td>
     <td>
-      <NpmLink pkg="@timi-design/vuepress-plugin-extract-code"/>
+      <NpmLink pkg="@idear-vuepress/extract-code"/>
     </td>
     <td>✖</td>
     <td>✖</td>
@@ -107,7 +107,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
     <a>kan-ban-niang</a>
     </td>
     <td>
-    <NpmLink pkg="@timi-design/vuepress-plugin-kan-ban-niang"/>
+    <NpmLink pkg="@idear-vuepress/kan-ban-niang"/>
     </td>
     <td>✖</td>
     <td>✖</td>
@@ -118,7 +118,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
     <a>screenfull</a>
     </td>
     <td>
-    <NpmLink pkg="@timi-design/vuepress-plugin-screenfull"/>
+    <NpmLink pkg="@idear-vuepress/screenfull"/>
     </td>
     <td>✖</td>
     <td>✖</td>
@@ -216,7 +216,7 @@ module.exports = {
 ```javascript
 module.exports = {
   plugins: [
-    ["@timi-design/back-to-top", false] // disabled.
+    ["@idear-vuepress/back-to-top", false] // disabled.
   ]
 };
 ```

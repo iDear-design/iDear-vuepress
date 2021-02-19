@@ -1,4 +1,4 @@
-# @timi-design/vuepress-plugin-screenfull
+# @idear-vuepress/screenfull
 
 ## Details
 
@@ -6,7 +6,7 @@
 
 |使用位置|值|
 |-|-|
-|plugin name|@timi-design/vuepress-plugin-screenfull|
+|plugin name|@idear-vuepress/screenfull|
 |component name|Screenfull（主题开发时使用）|
 
 
