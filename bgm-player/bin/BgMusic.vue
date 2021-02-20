@@ -1,20 +1,20 @@
 <template>
-  <div class="timi-bgm-panel">
+  <div class="idear-bgm-panel">
     <!-- 播放器 -->
     <audio id="bgm" :src="audio[curIndex].url" ref="bgm" @ended="bgmEnded" @canplay="playReady" @timeupdate="timeUpdate"></audio>
     <module-transition :position="floatPosition">
-      <div v-show="isFloat" @click="changeBgmInfo(false)" class="timi-float-box" :style="floatStyle">
+      <div v-show="isFloat" @click="changeBgmInfo(false)" class="idear-float-box" :style="floatStyle">
         <img :src="audio[curIndex].cover">
       </div>
     </module-transition>
     <module-transition>
-      <div class="timi-bgm-box" v-show="!isFloat" :style="panelPosition">
+      <div class="idear-bgm-box" v-show="!isFloat" :style="panelPosition">
         <!-- 封面 -->
-        <div class="timi-bgm-cover" @click="changeBgmInfo(false)" :style="`background-image:url(${audio[curIndex].cover})`">
+        <div class="idear-bgm-cover" @click="changeBgmInfo(false)" :style="`background-image:url(${audio[curIndex].cover})`">
           <!-- mini操作栏 -->
           <div v-show="isMini" class="mini-operation">
-            <i v-show="this.curPlayStatus === 'playing' && isMini" @click.stop="pauseBgm" class="timi-bgm timi-bgm-pause"></i>
-            <i v-show="this.curPlayStatus === 'paused' && isMini" @click.stop="playBgm" class="timi-bgm timi-bgm-play"></i>
+            <i v-show="this.curPlayStatus === 'playing' && isMini" @click.stop="pauseBgm" class="idear-bgm idear-bgm-pause"></i>
+            <i v-show="this.curPlayStatus === 'paused' && isMini" @click.stop="playBgm" class="idear-bgm idear-bgm-play"></i>
           </div>
           <!-- 错误信息显示 -->
           <div v-show="isFault" class="falut-message">
@@ -23,25 +23,25 @@
         </div>
         <module-transition duration=".15">
           <!-- 歌曲信息栏 -->
-          <div v-show="!isMini" class="timi-bgm-info">
+          <div v-show="!isMini" class="idear-bgm-info">
             <!-- 歌曲名 -->
-            <div class="info-box"><i class="timi-bgm timi-bgm-music music"></i>{{ audio[curIndex].name }}</div>
+            <div class="info-box"><i class="idear-bgm idear-bgm-music music"></i>{{ audio[curIndex].name }}</div>
             <!-- 艺术家名 -->
-            <div class="info-box"><i class="timi-bgm timi-bgm-artist"></i>{{ audio[curIndex].artist }}</div>
+            <div class="info-box"><i class="idear-bgm idear-bgm-artist"></i>{{ audio[curIndex].artist }}</div>
             <!-- 歌曲进度条 -->
-            <div class="timi-bgm-progress">
+            <div class="idear-bgm-progress">
               <div class="progress-bar" @click="progressJump">
                 <div class="bar" ref="pbar"></div>
               </div>
             </div>
             <!-- 歌曲操作栏 -->
-            <div class="timi-bgm-operation">
-              <i class="timi-bgm timi-bgm-last last" @click="playLast"></i>
-              <i v-show="curPlayStatus === 'playing'" @click="pauseBgm" class="timi-bgm timi-bgm-pause pause"></i>
-              <i v-show="curPlayStatus === 'paused'" ref="play" @click="playBgm" class="timi-bgm timi-bgm-play play"></i>
-              <i class="timi-bgm timi-bgm-next next" @click="playNext"></i>
-              <i v-show="!isMute" @click="muteBgm" class="timi-bgm timi-bgm-volume1 volume"></i>
-              <i v-show="isMute" @click="unMuteBgm" class="timi-bgm timi-bgm-mute mute"></i>
+            <div class="idear-bgm-operation">
+              <i class="idear-bgm idear-bgm-last last" @click="playLast"></i>
+              <i v-show="curPlayStatus === 'playing'" @click="pauseBgm" class="idear-bgm idear-bgm-pause pause"></i>
+              <i v-show="curPlayStatus === 'paused'" ref="play" @click="playBgm" class="idear-bgm idear-bgm-play play"></i>
+              <i class="idear-bgm idear-bgm-next next" @click="playNext"></i>
+              <i v-show="!isMute" @click="muteBgm" class="idear-bgm idear-bgm-volume1 volume"></i>
+              <i v-show="isMute" @click="unMuteBgm" class="idear-bgm idear-bgm-mute mute"></i>
               <div class="volume-bar" @click="volumeJump">
                 <div class="bar" ref="vbar"></div>
               </div>
@@ -50,8 +50,8 @@
         </module-transition>
         <!-- 缩放按钮 -->
         <module-transition duration=".15">
-          <div v-show="!isMini" @click="changeBgmInfo(true)" class="timi-bgm-left-box">
-            <i class="timi-bgm timi-bgm-left" ></i>
+          <div v-show="!isMini" @click="changeBgmInfo(true)" class="idear-bgm-left-box">
+            <i class="idear-bgm idear-bgm-left" ></i>
           </div>
         </module-transition>
       </div>
@@ -66,7 +66,7 @@ let rotateVal = 0
 // 歌曲封面的旋转
 function rotate () {
   InterVal = setInterval(function () {
-    const cover = document.querySelector('.timi-bgm-cover')
+    const cover = document.querySelector('.idear-bgm-cover')
     const btn = document.querySelector('.mini-operation')
     const fm = document.querySelector('.falut-message')
     rotateVal += 1

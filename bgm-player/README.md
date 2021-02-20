@@ -4,7 +4,7 @@
 
 ## Details
 
-> Bgm player plugin for vuepress-theme-timi or other vuepress theme.  
+> Bgm player plugin for vuepress-theme-idear or other vuepress theme.  
 > Vuepress 音乐播放器插件
 
 |使用位置|值|
@@ -65,7 +65,7 @@
 ## About
 
 - **兼容性**：vuepress-plugin-bgm-player是使用HTML5的Audio开发，故兼容性与Audio的兼容性相关
-- 对于 `vuepress-theme-timi` 的 `dark` 模式的适配  
+- 对于 `vuepress-theme-idear` 的 `dark` 模式的适配  
   ![dark.png](./images/dark.png)
 - **开发计划**
   - 自动播放

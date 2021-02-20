@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/timi-design/timi.git"
+    "url": "git+https://github.com/idear-design/idear.git"
   },
   "keywords": [
-    "vuepress-theme-timi",
+    "vuepress-theme-idear",
     "bgm player",
     "vuepress",
     "music player"
@@ -21,9 +21,9 @@
   "author": "maxiaoqu <maxiaoqu@163.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/timi-design/timi/issues"
+    "url": "https://github.com/idear-design/idear/issues"
   },
-  "homepage": "https://timi-design.maxiaoqu.com/timi",
+  "homepage": "https://idear-design.maxiaoqu.com/idear",
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "eslint": "^6.4.0",
