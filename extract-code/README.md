@@ -2,7 +2,7 @@
 
 ## Introduce
 
-Features and code presentation plugin forvuepress-theme-timi or other vuepress theme.
+Features and code presentation plugin forvuepress-theme-idear or other vuepress theme.
 
 ![demo](./bin/demo.png)
 
