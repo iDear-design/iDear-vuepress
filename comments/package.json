@@ -1,19 +1,19 @@
 {
   "name": "@idear-vuepress/comments",
   "version": "1.0.0",
-  "description": "Comments plugin for vuepress-theme-timi or other vuepress theme",
+  "description": "Comments plugin for vuepress-theme-idear or other vuepress theme",
   "keywords": [
-    "vuepress-theme-timi",
+    "vuepress-theme-idear",
     "comments",
     "vuepress"
   ],
-  "homepage": "https://timi-design.maxiaoqu.com/timi",
+  "homepage": "https://idear-design.maxiaoqu.com/idear",
   "bugs": {
-    "url": "https://github.com/timi-design/timi/issues"
+    "url": "https://github.com/idear-design/idear/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/timi-design/timi.git"
+    "url": "git+https://github.com/idear-design/idear.git"
   },
   "license": "MIT",
   "author": "maxiaoqu <maxiaoqu@163.com>",

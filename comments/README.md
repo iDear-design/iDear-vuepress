@@ -2,7 +2,7 @@
 
 ## Introduce
 
-Comments plugin for vuepress-theme-timi or other vuepress theme.
+Comments plugin for vuepress-theme-idear or other vuepress theme.
 
 ### Name
 
@@ -19,7 +19,7 @@ Comments plugin for vuepress-theme-timi or other vuepress theme.
 
 ```javscript
 module.exports = {
-  theme: 'timi',
+  theme: 'idear',
   themeConfig: {
     valineConfig: {
       appId: '...',// your appId
@@ -33,7 +33,7 @@ module.exports = {
 
 ```javscript
 module.exports = {
-  theme: 'timi',
+  theme: 'idear',
   plugins: [['@idear-vuepress/comments', {
     solution: 'valine',
     options: {
@@ -50,7 +50,7 @@ module.exports = {
 
 ```javscript
 module.exports = {
-  theme: 'timi',
+  theme: 'idear',
   themeConfig: {
     vssueConfig: {
       platform: 'github',
@@ -67,7 +67,7 @@ module.exports = {
 
 ```javscript
 module.exports = {
-  theme: 'timi',
+  theme: 'idear',
   plugins: [['@idear-vuepress/comments', {
     solution: 'vuess',
     options: {

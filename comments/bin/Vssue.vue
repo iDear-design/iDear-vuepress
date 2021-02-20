@@ -50,7 +50,7 @@ export default {
       if (to.path !== from.path) {
         // 切换页面时刷新评论
         setTimeout(() => {
-          this.key = `timi-${new Date().getTime()}`
+          this.key = `idear-${new Date().getTime()}`
         }, 300)
       }
     }
