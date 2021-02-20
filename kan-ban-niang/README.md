@@ -4,7 +4,7 @@
 
 ## Details
 
-> kan-ban-niang plugin forvuepress-theme-timi or other vuepress theme.  
+> kan-ban-niang plugin forvuepress-theme-idear or other vuepress theme.  
 > Vuepress 看板娘插件
 
 |使用位置|值|
