@@ -2,7 +2,7 @@
 
 ## Introduce
 
-RSS plugin only for vuepress-theme-timi.
+RSS plugin only for vuepress-theme-idear.
 
 ### Name
 
@@ -14,7 +14,7 @@ RSS plugin only for vuepress-theme-timi.
 
 - required: `true`
 - description: 网站地址
-- example: `https://vuepress-theme-timi.recoluan.com`
+- example: `https://vuepress-theme-idear.recoluan.com`
 
 ### copyright
 
