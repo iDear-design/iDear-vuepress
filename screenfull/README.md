@@ -2,7 +2,7 @@
 
 ## Details
 
-> Screenfull plugin forvuepress-theme-timi or other vuepress theme.
+> Screenfull plugin forvuepress-theme-idear or other vuepress theme.
 
 |使用位置|值|
 |-|-|

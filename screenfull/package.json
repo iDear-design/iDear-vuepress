@@ -1,7 +1,7 @@
 {
   "name": "@idear-vuepress/screenfull",
   "version": "1.0.0",
-  "description": "Screenfull plugin forvuepress-theme-timi or other vuepress theme",
+  "description": "Screenfull plugin forvuepress-theme-idear or other vuepress theme",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,18 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/timi-design/timi.git"
+    "url": "git+https://github.com/idear-design/idear.git"
   },
   "keywords": [
-    "vuepress-theme-timi",
+    "vuepress-theme-idear",
     "screenfull",
     "vuepress"
   ],
   "author": "reco_luan <recoluan@outlook.com>",
   "license": "MIT",
-  "homepage": "https://timi-design.maxiaoqu.com/timi",
+  "homepage": "https://idear-design.maxiaoqu.com/idear",
   "bugs": {
-    "url": "https://github.com/timi-design/timi/issues"
+    "url": "https://github.com/idear-design/idear/issues"
   },
   "dependencies": {
     "screenfull": "4.2.1"
