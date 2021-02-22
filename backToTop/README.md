@@ -1,14 +1,14 @@
-# @idear-vuepress/back-to-top
+# @idear-vuepress/backToTop
 
 ![demo.png](./images/demo.png)
 
 ## Details
 
-> Back-to-top plugin for vuepress-theme-idear or other vuepress theme.
+> backToTop plugin for vuepress-theme-idear or other vuepress theme.
 
 |使用位置|值|
 |-|-|
-|plugin name|@idear-vuepress/back-to-top|
+|plugin name|@idear-vuepress/backToTop|
 |component name|BackToTop（自动出现在页面中，无需添加额外代码）|
 
 ## Options

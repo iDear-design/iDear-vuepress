@@ -1,7 +1,7 @@
 {
-  "name": "@idear-vuepress/back-to-top",
+  "name": "@idear-vuepress/backToTop",
   "version": "1.0.0",
-  "description": "Back-to-top plugin for vuepress-theme-idear or other vuepress theme",
+  "description": "backToTop plugin for vuepress-theme-idear or other vuepress theme",
   "keywords": [
     "vuepress-theme-idear",
     "backtotop",
