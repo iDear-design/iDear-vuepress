@@ -49,10 +49,10 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
   </tr>
   <tr>
     <td>
-      <a>loading-page</a>
+      <a>loadingPage</a>
     </td>
     <td>
-      <NpmLink pkg="@idear-vuepress/loading-page"/>
+      <NpmLink pkg="@idear-vuepress/loadingPage"/>
     </td>
     <td>✔</td>
     <td>✖</td>

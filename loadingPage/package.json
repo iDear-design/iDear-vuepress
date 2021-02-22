@@ -1,10 +1,10 @@
 {
-  "name": "@idear-vuepress/loading-page",
+  "name": "@idear-vuepress/loadingPage",
   "version": "1.0.0",
   "description": "Loading page plugin for vuepress-theme-idear or other vuepress theme",
   "keywords": [
     "vuepress-theme-idear",
-    "loading-page",
+    "loadingPage",
     "vuepress"
   ],
   "homepage": "http://idear-vuepress.idear.designidear",
