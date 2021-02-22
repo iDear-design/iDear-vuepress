@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/idear-design/idear/issues"
   },
-  "homepage": "http://idear-vuepress.idear.design/idear",
+  "homepage": "http://idear-vuepress.idear.designidear",
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "eslint": "^6.4.0",
