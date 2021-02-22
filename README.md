@@ -216,7 +216,7 @@ module.exports = {
 ```javascript
 module.exports = {
   plugins: [
-    ["@idear-vuepress/back-to-top", false] // disabled.
+    ["@idear-vuepress/backToTop", false] // disabled.
   ]
 };
 ```
