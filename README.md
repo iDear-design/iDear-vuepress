@@ -71,10 +71,10 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
   </tr>
   <tr>
     <td>
-      <a>rss</a>
+      <a>rssProduce</a>
     </td>
     <td>
-      <NpmLink pkg="@idear-vuepress/rss"/>
+      <NpmLink pkg="@idear-vuepress/rssProduce"/>
     </td>
     <td>✖</td>
     <td>✔</td>

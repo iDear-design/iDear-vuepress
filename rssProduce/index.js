@@ -4,7 +4,7 @@ const chalk = require('chalk')
 
 module.exports = (options, ctx) => {
   return {
-    name: 'rss',
+    name: 'rssProduce',
 
     generated() {
       const fs = require('fs-extra')

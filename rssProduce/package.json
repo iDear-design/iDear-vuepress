@@ -1,5 +1,5 @@
 {
-  "name": "@idear-vuepress/rss",
+  "name": "@idear-vuepress/rssProduce",
   "version": "1.0.0",
   "description": "RSS plugin only for vuepress-theme-idear.",
   "main": "index.js",
@@ -14,7 +14,7 @@
   },
   "keywords": [
     "vuepress-theme-idear",
-    "rss",
+    "rssProduce",
     "vuepress"
   ],
   "author": "maxiaoqu <maxiaoqu@163.com>",
