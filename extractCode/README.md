@@ -17,7 +17,7 @@ Features and code presentation plugin forvuepress-theme-idear or other vuepress 
 ```js
 module.exports = {
   plugins: [
-    '@idear-vuepress/extract-code'
+    '@idear-vuepress/extractCode'
   ]
 }
 ```

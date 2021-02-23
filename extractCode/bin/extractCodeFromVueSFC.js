@@ -3,7 +3,7 @@ const { fs, path } = require('@vuepress/shared-utils')
 function extractCodeFromVueSFC (md, options = {}) {
   const root = options.root || path.join(process.cwd())
 
-  md.core.ruler.after('block', 'extract-code', function parser (state) {
+  md.core.ruler.after('block', 'extractCode', function parser (state) {
     const tokens = state.tokens
     let tok; let i
 
