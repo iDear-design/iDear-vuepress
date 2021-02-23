@@ -1,5 +1,5 @@
 {
-  "name": "@idear-vuepress/extract-code",
+  "name": "@idear-vuepress/extractCode",
   "version": "1.0.0",
   "description": "Features and code presentation plugin forvuepress-theme-idear or other vuepress theme",
   "main": "index.js",
@@ -14,7 +14,7 @@
   },
   "keywords": [
     "vuepress-theme-idear",
-    "extract-code",
+    "extractCode",
     "vuepress"
   ],
   "author": "maxiaoqu <maxiaoqu@163.com>",

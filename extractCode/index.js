@@ -2,7 +2,7 @@ const { path } = require('@vuepress/shared-utils')
 const extractCodeFromVueSFC = require('./bin/extractCodeFromVueSFC.js')
 
 module.exports = (options, context) => ({
-  name: '@idear-vuepress/extract-code',
+  name: '@idear-vuepress/extractCode',
   chainMarkdown (config) {
     config.plugin('extractCode')
       .use(extractCodeFromVueSFC)
