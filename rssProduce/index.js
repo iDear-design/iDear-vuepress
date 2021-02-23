@@ -1,5 +1,5 @@
 const path = require('path')
-const RSS = require('rss')
+const RSS = require('rssProduce')
 const chalk = require('chalk')
 
 module.exports = (options, ctx) => {
@@ -42,7 +42,7 @@ module.exports = (options, ctx) => {
           .forEach(page => feed.item(page))
 
       fs.writeFile(
-          path.resolve(outDir, 'rss.xml'),
+          path.resolve(outDir, 'rssProduce.xml'),
           feed.xml()
       )
       console.log(chalk.green.bold('RSS has been generated!'))
