@@ -82,10 +82,10 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
   </tr>
   <tr>
       <td>
-        <a>bgm-player</a>
+        <a>bgmPlayer</a>
       </td>
       <td>
-        <NpmLink pkg="@idear-vuepress/bgm-player"/>
+        <NpmLink pkg="@idear-vuepress/bgmPlayer"/>
       </td>
       <td>✖</td>
       <td>✖</td>

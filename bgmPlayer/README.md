@@ -1,4 +1,4 @@
-# @idear-vuepress/bgm-player
+# @idear-vuepress/bgmPlayer
 
 ![demo.png](./images/demo.png)
 
@@ -9,7 +9,7 @@
 
 |使用位置|值|
 |-|-|
-|plugin name|@idear-vuepress/bgm-player|
+|plugin name|@idear-vuepress/bgmPlayer|
 |component name|BgMusic（自动出现在页面中，无需添加额外代码）|
 
 ## Options
@@ -64,7 +64,7 @@
 
 ## About
 
-- **兼容性**：vuepress-plugin-bgm-player是使用HTML5的Audio开发，故兼容性与Audio的兼容性相关
+- **兼容性**：vuepress-plugin-bgmPlayer是使用HTML5的Audio开发，故兼容性与Audio的兼容性相关
 - 对于 `vuepress-theme-idear` 的 `dark` 模式的适配  
   ![dark.png](./images/dark.png)
 - **开发计划**

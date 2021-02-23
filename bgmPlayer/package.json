@@ -1,5 +1,5 @@
 {
-  "name": "@idear-vuepress/bgm-player",
+  "name": "@idear-vuepress/bgmPlayer",
   "version": "1.0.0",
   "description": "bgm player plugin for vuepress themes",
   "main": "index.js",
