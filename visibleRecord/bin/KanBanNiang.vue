@@ -141,7 +141,7 @@ export default {
     },
     initBanNiang () {
       if (this.themeName.indexOf(this.currentTheme) === -1) {
-        console.log('@idear-vuepress/kan-ban-niang不支持主题' + this.currentTheme + ', 请检查主题名, 或前往https://vuepress-theme-idear.recoluan.com/views/plugins/kanbanniang.html 查看支持的主题')
+        console.log('@idear-vuepress/visibleRecord不支持主题' + this.currentTheme + ', 请检查主题名, 或前往https://vuepress-theme-idear.recoluan.com/views/plugins/kanbanniang.html 查看支持的主题')
         document.querySelector('.kanbanniang').style.display = 'none'
         return
       }

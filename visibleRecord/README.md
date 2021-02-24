@@ -1,15 +1,15 @@
-# @idear-vuepress/kan-ban-niang
+# @idear-vuepress/visibleRecord
 
 ![demo.png](./images/demo.png)
 
 ## Details
 
-> kan-ban-niang plugin forvuepress-theme-idear or other vuepress theme.  
+> visibleRecord plugin forvuepress-theme-idear or other vuepress theme.  
 > Vuepress 看板娘插件
 
 |使用位置|值|
 |-|-|
-|plugin name|@idear-vuepress/kan-ban-niang|
+|plugin name|@idear-vuepress/visibleRecord|
 |component name|KanBanNiang（自动出现在页面中，无需添加额外代码）|
 
 ## Buttons

@@ -29,7 +29,7 @@ module.exports = (options, context) => ({
       HEIGHT: height || 220
     }
   },
-  name: '@idear-vuepress/kan-ban-niang',
+  name: '@idear-vuepress/visibleRecord',
   enhanceAppFiles: resolve(__dirname, './bin/enhanceAppFile.js'),
   globalUIComponents: 'KanBanNiang'
 })

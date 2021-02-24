@@ -1,7 +1,7 @@
 {
-  "name": "@idear-vuepress/kan-ban-niang",
+  "name": "@idear-vuepress/visibleRecord",
   "version": "1.0.0",
-  "description": "Kan-ban-niang plugin forvuepress-theme-idear or other vuepress theme",
+  "description": "visibleRecord plugin forvuepress-theme-idear or other vuepress theme",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
