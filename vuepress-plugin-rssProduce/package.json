@@ -1,0 +1,36 @@
+{
+  "name": "@idear-vuepress/vuepress-plugin-rssProduce",
+  "version": "1.0.0",
+  "description": "RSS plugin only for vuepress-theme-idear.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint-ext": "eslint --ext .js,.vue ./",
+    "eslint-fix": "eslint --fix --ext .js,.vue ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idear-design/idear.git"
+  },
+  "keywords": [
+    "vuepress-theme-idear",
+    "vuepress-plugin-rssProduce",
+    "vuepress"
+  ],
+  "author": "maxiaoqu <maxiaoqu@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/idear-design/idear/issues"
+  },
+  "homepage": "http://idear-vuepress.idear.design",
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.4.0",
+    "eslint-plugin-vue": "^5.2.3"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "fs-extra": "^5.0.0",
+    "rss": "^1.2.2"
+  }
+}
