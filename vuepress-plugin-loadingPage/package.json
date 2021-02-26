@@ -1,0 +1,22 @@
+{
+  "name": "@idear-vuepress/vuepress-plugin-loadingPage",
+  "version": "1.0.0",
+  "description": "Loading page plugin for vuepress-theme-idear or other vuepress theme",
+  "keywords": [
+    "vuepress-theme-idear",
+    "loadingPage",
+    "vuepress"
+  ],
+  "homepage": "http://idear-vuepress.idear.design",
+  "bugs": {
+    "url": "https://github.com/idear-design/idear/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idear-design/idear.git"
+  },
+  "license": "MIT",
+  "author": "maxiaoqu <maxiaoqu@163.com>",
+  "main": "index.js",
+  "gitHead": "c3a1db8487bece9341b6269a0f6ebf910cd5462a"
+}
