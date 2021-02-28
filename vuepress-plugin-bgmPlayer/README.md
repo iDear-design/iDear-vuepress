@@ -1,4 +1,4 @@
-# @idear-vuepress/bgmPlayer
+# @idear-vuepress/vuepress-plugin-bgmPlayer
 
 ![demo.png](./images/demo.png)
 

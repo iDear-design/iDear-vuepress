@@ -1,5 +1,5 @@
 {
-  "name": "@idear-vuepress/bgmPlayer",
+  "name": "@idear-vuepress/vuepress-plugin-bgmPlayer",
   "version": "1.0.0",
   "description": "bgm player plugin for vuepress themes",
   "main": "index.js",
@@ -14,7 +14,7 @@
   },
   "keywords": [
     "vuepress-theme-idear",
-    "bgm player",
+    "vuepress-plugin-bgmPlayer",
     "vuepress",
     "music player"
   ],
@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/idear-design/idear/issues"
   },
-  "homepage": "http://idear-vuepress.idear.designidear",
+  "homepage": "http://idear-vuepress.idear.design",
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "eslint": "^6.4.0",
