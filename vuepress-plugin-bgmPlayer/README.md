@@ -9,7 +9,7 @@
 
 |使用位置|值|
 |-|-|
-|plugin name|@idear-vuepress/bgmPlayer|
+|plugin name|@idear-vuepress/vuepress-plugin-bgmPlayer|
 |component name|BgMusic（自动出现在页面中，无需添加额外代码）|
 
 ## Options

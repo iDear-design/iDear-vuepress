@@ -1,4 +1,4 @@
-import BgMusic from './BgMusic.vue'
+import BgmPlayer from './BgmPlayer.vue'
 export default ({ Vue }) => {
-  Vue.component('BgMusic', BgMusic)
+  Vue.component('BgmPlayer', BgmPlayer)
 }

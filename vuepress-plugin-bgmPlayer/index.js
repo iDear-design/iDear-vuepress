@@ -22,5 +22,5 @@ module.exports = (options, context) => ({
   },
   name: '@idear-vuepress/vuepress-plugin-bgmPlayer',
   enhanceAppFiles: resolve(__dirname, './bin/enhanceAppFile.js'),
-  globalUIComponents: 'BgMusic'
+  globalUIComponents: 'BgmPlayer'
 })
