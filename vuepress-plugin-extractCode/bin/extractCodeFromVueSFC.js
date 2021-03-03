@@ -21,7 +21,7 @@ function extractCodeFromVueSFC (md, options = {}) {
 
     function isDemoBlock (token) {
       const content = token.content
-      const regex = /<\/RecoDemo>$/
+      const regex = /<\/ExtractCode>$/
       return regex.test(content.trim())
     }
 

@@ -1,5 +1,5 @@
-import RecoDemo from './RecoDemo.vue'
+import ExtractCode from './ExtractCode.vue'
 
 export default ({ Vue }) => {
-  Vue.component('RecoDemo', RecoDemo)
+  Vue.component('ExtractCode', ExtractCode)
 }
