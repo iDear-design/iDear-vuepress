@@ -10,13 +10,16 @@
         class="operation"
         @mouseenter="isShowMessageBox = true"
         @mouseleave="isShowMessageBox = false">
-        <i class="kbnfont kbn-ban-home ban-home" @click="goHome" @mouseenter="hoverGoHome" @mouseleave="resetMessage"></i>
+        <i class="kbnfont kbn-ban-home ban-home" @click="goHome" @mouseenter="hoverGoHome"
+           @mouseleave="resetMessage"></i>
         <i class="kbnfont kbn-ban-message message"></i>
-        <i class="kbnfont kbn-ban-close close" @click="closeBanNiang" @mouseenter="hoverCloseBanNiang" @mouseleave="resetMessage"></i>
+        <i class="kbnfont kbn-ban-close close" @click="closeBanNiang" @mouseenter="hoverCloseBanNiang"
+           @mouseleave="resetMessage"></i>
         <a target="_blank" href="https://vuepress-theme-idear.recoluan.com/views/plugins/kanbanniang.html">
-          <i class="kbnfont kbn-ban-info info" @mouseenter="hoverMoreInfo" @mouseleave="resetMessage" ></i>
+          <i class="kbnfont kbn-ban-info info" @mouseenter="hoverMoreInfo" @mouseleave="resetMessage"></i>
         </a>
-        <i v-show="myTheme.length > 1" class="kbnfont kbn-ban-theme skin" @click="changeTheme" @mouseenter="hoverChangeTheme" @mouseleave="resetMessage"></i>
+        <i v-show="myTheme.length > 1" class="kbnfont kbn-ban-theme skin" @click="changeTheme"
+           @mouseenter="hoverChangeTheme" @mouseleave="resetMessage"></i>
       </div>
       <canvas
         id="banniang"
@@ -34,9 +37,10 @@
 
 <script>
 import live2dJSString from './assets/js/live2d'
+
 export default {
-  name: 'KanBanNiang',
-  data () {
+  name: 'VisibleRecord',
+  data() {
     return {
       isLoaded: true,
       displayBanNiang: false,
@@ -90,7 +94,7 @@ export default {
       btnStyle: BTN_STYLE
     }
   },
-  mounted () {
+  mounted() {
     this.btnStyle = {
       ...this.btnStyle,
       height: this.myTheme.length > 1 ? '120px' : '100px'
@@ -99,27 +103,27 @@ export default {
     this.initBanNiang()
   },
   methods: {
-    hoverGoHome () {
+    hoverGoHome() {
       this.messages.message = this.messages.home
     },
-    hoverChangeTheme () {
+    hoverChangeTheme() {
       this.messages.message = this.messages.theme
     },
-    hoverMoreInfo () {
+    hoverMoreInfo() {
       this.messages.message = '想知道关于我的更多信息吗？'
     },
-    hoverCloseBanNiang () {
+    hoverCloseBanNiang() {
       this.messages.message = this.messages.close
     },
-    resetMessage () {
+    resetMessage() {
       this.messages.message = this.messages.welocme
     },
-    goHome () {
+    goHome() {
       if (this.$route.path !== '/') {
         this.$router.push('/')
       }
     },
-    changeTheme () {
+    changeTheme() {
       const themes = []
       for (var i = 0; i < this.myTheme.length; i++) {
         if (this.myTheme[i] != this.currentTheme) {
@@ -130,16 +134,16 @@ export default {
       this.currentTheme = themes[randomNum]
       this.initBanNiang()
     },
-    closeBanNiang () {
+    closeBanNiang() {
       this.isLoaded = false
       this.displayBanNiang = true
     },
-    showBanNiang () {
+    showBanNiang() {
       this.isLoaded = true
       this.displayBanNiang = false
       this.initBanNiang()
     },
-    initBanNiang () {
+    initBanNiang() {
       if (this.themeName.indexOf(this.currentTheme) === -1) {
         console.log('@idear-vuepress/visibleRecord不支持主题' + this.currentTheme + ', 请检查主题名, 或前往https://vuepress-theme-idear.recoluan.com/views/plugins/kanbanniang.html 查看支持的主题')
         document.querySelector('.kanbanniang').style.display = 'none'
@@ -177,49 +181,55 @@ export default {
 
 <style lang="stylus" scoped>
 @require './assets/iconfont/iconfont.css'
-  .showBanNiang
+.showBanNiang
+  position fixed
+  right 70px
+  bottom 6rem
+  color $accentColor
+  width 48px
+  height 20px
+  padding 10px
+  cursor pointer
+  border-radius 4px
+  // 其他主题识别不到变量时使用
+  background-color rgba(231, 234, 241, 0.5)
+  // reco主题
+  box-shadow var(--box-shadow)
+  background-color var(--background-color)
+
+.banniang-container
+  position fixed
+  right 50px
+  bottom 100px
+  color #00adb5
+
+  .messageBox
     position fixed
-    right 70px
-    bottom 6rem
-    color $accentColor
-    width 48px
-    height 20px
     padding 10px
-    cursor pointer
-    border-radius 4px
-    // 其他主题识别不到变量时使用
-    background-color rgba(231, 234, 241, 0.5)
-    // reco主题
-    box-shadow var(--box-shadow)
-    background-color var(--background-color)
-  .banniang-container
+    height 60px
+    width 160px
+    border-radius 8px
+    background-color lighten($accentColor, 50%)
+    color $textColor
+    opacity 0.8
+
+  .operation
+    width 20px
     position fixed
-    right 50px
-    bottom 100px
-    color #00adb5
-    .messageBox
-      position fixed
-      padding 10px
-      height 60px
-      width 160px
-      border-radius 8px
-      background-color lighten($accentColor, 50%)
-      color $textColor
-      opacity 0.8
-    .operation
-      width 20px
-      position fixed
-      display flex
-      flex-direction column
-      justify-content space-between
-      i
-        font-size 20px
-        cursor pointer
-        color lighten($textColor, 50%)
-        &:hover
-          color lighten($accentColor, 50%)
-    #banniang
-      z-index 99999
-      pointer-events none
-      position fixed
+    display flex
+    flex-direction column
+    justify-content space-between
+
+    i
+      font-size 20px
+      cursor pointer
+      color lighten($textColor, 50%)
+
+      &:hover
+        color lighten($accentColor, 50%)
+
+  #banniang
+    z-index 99999
+    pointer-events none
+    position fixed
 </style>

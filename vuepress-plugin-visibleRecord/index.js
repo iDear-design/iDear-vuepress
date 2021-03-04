@@ -1,8 +1,8 @@
-const { resolve } = require('path')
+const {resolve} = require('path')
 
 module.exports = (options, context) => ({
-  define () {
-    const { clean, messages, theme, modelStyle, btnStyle, width, height, messageStyle } = options
+  define() {
+    const {clean, messages, theme, modelStyle, btnStyle, width, height, messageStyle} = options
     return {
       CLEAN: clean || false,
       THEME: theme || ['blackCat', 'whiteCat', 'haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'miku', 'z16'],

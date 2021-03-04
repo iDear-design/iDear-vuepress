@@ -1,4 +1,5 @@
-import KanBanNiang from './KanBanNiang.vue'
-export default ({ Vue }) => {
-  Vue.component('KanBanNiang', KanBanNiang)
+import VisibleRecord from './VisibleRecord.vue'
+
+export default ({Vue}) => {
+  Vue.component('VisibleRecord', VisibleRecord)
 }
