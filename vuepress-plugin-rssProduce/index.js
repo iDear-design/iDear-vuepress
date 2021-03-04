@@ -15,7 +15,7 @@ module.exports = (options, ctx) => {
       const feed = new RSS({
         title: siteConfig.title,
         description: siteConfig.description,
-        feed_url: `${site_url}/rss.xml`,
+        feed_url: `${site_url}/rssProduce.xml`,
         site_url,
         copyright: copyright || `${author} ${year}`,
         language: 'en'
@@ -44,7 +44,7 @@ module.exports = (options, ctx) => {
         path.resolve(outDir, 'rssProduce.xml'),
         feed.xml()
       )
-      console.log(chalk.green.bold('RSS has been generated!'))
+      console.log(chalk.green.bold('rssProduce has been generated!'))
     }
   }
 }

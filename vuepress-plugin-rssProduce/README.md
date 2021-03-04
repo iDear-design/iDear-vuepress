@@ -6,7 +6,7 @@ RSS plugin only for vuepress-theme-idear.
 
 ### Name
 
-- **As plugin**: `@idear-vuepress/rssProduce`
+- **As plugin**: `@idear-vuepress/vuepress-plugin-rssProduce`
 
 ## Usage
 
