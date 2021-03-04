@@ -6,7 +6,7 @@
 
 |使用位置|值|
 |-|-|
-|plugin name|@idear-vuepress/loadingPage|
+|plugin name|@idear-vuepress/vuepress-plugin-loadingPage|
 |component name|LoadingPage（主题开发时使用）|
 
 
