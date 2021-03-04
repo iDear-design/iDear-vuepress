@@ -1,4 +1,4 @@
-const { path } = require('@vuepress/shared-utils')
+const {path} = require('@vuepress/shared-utils')
 
 module.exports = (options, context) => ({
   name: '@idear-vuepress/vuepress-plugin-screenfull',

@@ -1,5 +1,5 @@
 import Screenfull from './Screenfull.vue'
 
-export default ({ Vue }) => {
+export default ({Vue}) => {
   Vue.component('Screenfull', Screenfull)
 }

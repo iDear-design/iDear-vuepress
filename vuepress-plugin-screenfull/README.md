@@ -6,7 +6,7 @@
 
 |使用位置|值|
 |-|-|
-|plugin name|@idear-vuepress/screenfull|
+|plugin name|@idear-vuepress/vuepress-plugin-screenfull|
 |component name|Screenfull（主题开发时使用）|
 
 
