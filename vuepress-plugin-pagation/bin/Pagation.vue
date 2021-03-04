@@ -5,7 +5,7 @@
         class="jump"
         v-show="currentPage > 1"
         @click="goPrev"
-        unselectable="on">{{pagationLocales.prev}}</span>
+        unselectable="on">{{ pagationLocales.prev }}</span>
       <span
         v-show="efont"
         class="jump"
@@ -18,25 +18,25 @@
         v-for="num in indexs"
         :key="num"
         :class="{bgprimary:currentPage==num}"
-        @click="jumpPage(num)">{{num}}</span>
+        @click="jumpPage(num)">{{ num }}</span>
       <span
         class="ellipsis"
         v-show="efont&&currentPage<pages-4">...</span>
       <span
         v-show="efont&&currentPage<pages-4"
         class="jump"
-        @click="jumpPage(pages)">{{pages}}</span>
+        @click="jumpPage(pages)">{{ pages }}</span>
       <span
         class="jump"
         v-show="currentPage < pages"
-        @click="goNext">{{pagationLocales.next}}</span>
-      <span class="jumppoint">{{pagationLocales.jump}}</span>
+        @click="goNext">{{ pagationLocales.next }}</span>
+      <span class="jumppoint">{{ pagationLocales.jump }}</span>
       <span class="jumpinp">
         <input type="text" v-model="changePage">
       </span>
       <span
         class="jump gobtn"
-        @click="jumpPage(changePage)">{{pagationLocales.go}}</span>
+        @click="jumpPage(changePage)">{{ pagationLocales.go }}</span>
     </div>
   </div>
 </template>
@@ -45,7 +45,7 @@
 import pagationLocales from './locales'
 
 export default {
-  data () {
+  data() {
     return {
       changePage: '', // 跳转页
       /* eslint-disable no-undef */
@@ -67,7 +67,7 @@ export default {
     }
   },
   computed: {
-    pages () {
+    pages() {
       const pageSize = this.pageSize || this.perPage
       return Math.ceil(this.total / pageSize)
     },
@@ -103,18 +103,18 @@ export default {
       }
       return ar
     },
-    pagationLocales () {
+    pagationLocales() {
       return pagationLocales(this)
     }
   },
   methods: {
-    goPrev () {
+    goPrev() {
       let currentPage = this.currentPage
       if (this.currentPage > 1) {
         this.emit(--currentPage)
       }
     },
-    goNext () {
+    goNext() {
       let currentPage = this.currentPage
       if (currentPage < this.pages) {
         this.emit(++currentPage)
@@ -129,7 +129,7 @@ export default {
       }
       alert(`请输入大于0，并且小于${this.pages}的页码！`)
     },
-    emit (id) {
+    emit(id) {
       this.$emit('getCurrentPage', id)
     }
   }
@@ -146,6 +146,7 @@ export default {
   margin: 20px auto 0;
   background: #f2f2f2;
   background: var(--background-color);
+
   .pagation-list
     font-size: 0;
     line-height: 50px;
@@ -155,12 +156,15 @@ export default {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
     span
       font-size: 14px;
+
       &.jump, &.jumpinp input
         box-shadow: var(--box-shadow)
-        border 1px solid var(--border-color)!important
+        border 1px solid var(--border-color) !important
         border: 1px solid #ccc;
+
       &.jump
         padding: 5px 8px;
         -webkit-border-radius: 4px;
@@ -168,6 +172,7 @@ export default {
         border-radius: 4px;
         cursor: pointer;
         margin-left: 5px;
+
       &.jumpinp
         input
           width: 55px;
@@ -179,13 +184,16 @@ export default {
           border-radius: 4px;
           text-align: center;
           outline none
+
       &.bgprimary
         cursor: default;
         color: #fff;
         background: $accentColor;
         border-color: $accentColor;
+
       &.ellipsis
         padding: 0px 8px;
+
       &.jumppoint
         margin: 0 10px 0 30px;
 </style>

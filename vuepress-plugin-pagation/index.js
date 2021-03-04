@@ -1,8 +1,8 @@
-const { path } = require('@vuepress/shared-utils')
+const {path} = require('@vuepress/shared-utils')
 
 module.exports = (options, context) => ({
-  define () {
-    const { perPage } = options || {}
+  define() {
+    const {perPage} = options || {}
     return {
       PERPAGE: perPage
     }

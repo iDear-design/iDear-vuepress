@@ -1,5 +1,5 @@
 import Pagation from './Pagation.vue'
 
-export default ({ Vue }) => {
+export default ({Vue}) => {
   Vue.component('Pagation', Pagation)
 }

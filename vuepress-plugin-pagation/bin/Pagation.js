@@ -2,31 +2,31 @@ import pagationLocales from './locales'
 import './pagation.styl'
 
 export default {
-  render (h) {
+  render(h) {
     return h('div', {
-      class: { pagation: true },
-      style: { display: this.show ? 'block' : 'none' }
+      class: {pagation: true},
+      style: {display: this.show ? 'block' : 'none'}
     }, [
       h('div', {
-        class: { 'pagation-list': true }
+        class: {'pagation-list': true}
       }, [
         h('span', {
-          class: { jump: true },
-          style: { display: this.currentPage > 1 ? 'inline' : 'none' },
-          on: { click: this.goPrev },
-          attrs: { unselectable: 'on' },
-          domProps: { innerHTML: this.pagationLocales.prev }
+          class: {jump: true},
+          style: {display: this.currentPage > 1 ? 'inline' : 'none'},
+          on: {click: this.goPrev},
+          attrs: {unselectable: 'on'},
+          domProps: {innerHTML: this.pagationLocales.prev}
         }),
         h('span', {
-          class: { efont: true },
-          style: { display: this.efont ? 'inline-block' : 'none' },
-          on: { click: this.jumpPage.bind(this, 1) },
-          domProps: { innerHTML: 1 }
+          class: {efont: true},
+          style: {display: this.efont ? 'inline-block' : 'none'},
+          on: {click: this.jumpPage.bind(this, 1)},
+          domProps: {innerHTML: 1}
         }),
         h('span', {
-          class: { efont: true },
-          style: { display: this.efont ? 'inline-block' : 'none' },
-          domProps: { innerHTML: '...' }
+          class: {efont: true},
+          style: {display: this.efont ? 'inline-block' : 'none'},
+          domProps: {innerHTML: '...'}
         }),
         ...this.indexs.map(num => {
           return h('span', {
@@ -34,47 +34,51 @@ export default {
               jump: true,
               bgprimary: this.currentPage == num
             },
-            on: { click: this.jumpPage.bind(this, num) },
-            attrs: { key: num },
-            domProps: { innerHTML: num }
+            on: {click: this.jumpPage.bind(this, num)},
+            attrs: {key: num},
+            domProps: {innerHTML: num}
           })
         }),
         h('span', {
-          class: { ellipsis: true },
-          style: { display: this.efont && this.currentPage < this.pages - 4 ? 'inline-block' : 'none' },
-          domProps: { innerHTML: '...' }
+          class: {ellipsis: true},
+          style: {display: this.efont && this.currentPage < this.pages - 4 ? 'inline-block' : 'none'},
+          domProps: {innerHTML: '...'}
         }),
         h('span', {
-          class: { jump: true },
-          style: { display: this.efont && this.currentPage < this.pages - 4 ? 'inline-block' : 'none' },
-          domProps: { innerHTML: this.pages }
+          class: {jump: true},
+          style: {display: this.efont && this.currentPage < this.pages - 4 ? 'inline-block' : 'none'},
+          domProps: {innerHTML: this.pages}
         }),
         h('span', {
-          class: { jump: true },
-          style: { display: this.currentPage < this.pages ? 'inline' : 'none' },
-          domProps: { innerHTML: this.pagationLocales.next },
-          on: { click: this.goNext }
+          class: {jump: true},
+          style: {display: this.currentPage < this.pages ? 'inline' : 'none'},
+          domProps: {innerHTML: this.pagationLocales.next},
+          on: {click: this.goNext}
         }),
         h('span', {
-          class: { jumppoint: true },
-          domProps: { innerHTML: this.pagationLocales.jump }
+          class: {jumppoint: true},
+          domProps: {innerHTML: this.pagationLocales.jump}
         }),
         h('span', {
-          class: { jumpinp: true }
+          class: {jumpinp: true}
         }, [h('input', {
-          attrs: { type: 'text' },
-          domProps: { value: this.value },
-          on: { input (event) { this.$emit(event.target.value) } }
+          attrs: {type: 'text'},
+          domProps: {value: this.value},
+          on: {
+            input(event) {
+              this.$emit(event.target.value)
+            }
+          }
         })]),
         h('span', {
-          class: { jump: true, gobtn: true },
-          on: { click: this.jumpPage.bind(this, this.changePage) },
-          domProps: { innerHTML: this.pagationLocales.go }
+          class: {jump: true, gobtn: true},
+          on: {click: this.jumpPage.bind(this, this.changePage)},
+          domProps: {innerHTML: this.pagationLocales.go}
         })
       ])
     ])
   },
-  data () {
+  data() {
     return {
       changePage: '', // 跳转页
       /* eslint-disable no-undef */
@@ -96,7 +100,7 @@ export default {
     }
   },
   computed: {
-    pages () {
+    pages() {
       const pageSize = this.pageSize || this.perPage
       return Math.ceil(this.total / pageSize)
     },
@@ -132,18 +136,18 @@ export default {
       }
       return ar
     },
-    pagationLocales () {
+    pagationLocales() {
       return pagationLocales(this)
     }
   },
   methods: {
-    goPrev () {
+    goPrev() {
       let currentPage = this.currentPage
       if (this.currentPage > 1) {
         this.emit(--currentPage)
       }
     },
-    goNext () {
+    goNext() {
       let currentPage = this.currentPage
       if (currentPage < this.pages) {
         this.emit(++currentPage)
@@ -158,7 +162,7 @@ export default {
       }
       alert(`请输入大于0，并且小于${this.pages}的页码！`)
     },
-    emit (id) {
+    emit(id) {
       this.$emit('getCurrentPage', id)
     }
   }

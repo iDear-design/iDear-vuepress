@@ -19,22 +19,8 @@ const en = {
   jump: 'Jump To'
 }
 
-const ja = {
-  prev: '前のページ',
-  next: '次のページ',
-  go: 'へ',
-  jump: 'ジャンプ'
-}
-
-const ko = {
-  prev: '이전 페이지',
-  next: '다음 페이지',
-  go: '행',
-  jump: '건너뛰기'
-}
-
-export default function pagationLocales (ctx) {
-  const { $lang, $recoLocales: { pagation } = {} } = ctx
+export default function pagationLocales(ctx) {
+  const {$lang, $recoLocales: {pagation} = {}} = ctx
   if (pagation) {
     return pagation
   }
@@ -43,12 +29,6 @@ export default function pagationLocales (ctx) {
   }
   if (/^zh\-(HK|MO|TW)$/.test($lang)) {
     return zhHant
-  }
-  if (/^ja\-JP$/.test($lang)) {
-    return ja
-  }
-  if (/^ko\-KR$/.test($lang)) {
-    return ko
   }
   return en
 }

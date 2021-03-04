@@ -8,7 +8,7 @@
 
 |使用位置|值|
 |-|-|
-|plugin name|@idear-vuepress/pagation|
+|plugin name|@idear-vuepress/vuepress-plugin-pagation|
 |component name|Pagation（主题开发时使用）|
 
 ## Options
