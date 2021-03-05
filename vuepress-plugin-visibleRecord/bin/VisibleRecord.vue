@@ -1,6 +1,6 @@
 <template>
-  <div class="kanbanniang">
-    <div class="banniang-container" v-show="isLoaded">
+  <div class="visibleRecord">
+    <div class="visibleRecord-container" v-show="isLoaded">
       <div class="messageBox" :style="messageStyle" v-show="isShowMessageBox">
         {{ messages.message || '欢迎来到 ' + $site.title }}
       </div>
@@ -13,23 +13,23 @@
         <i class="kbnfont kbn-ban-home ban-home" @click="goHome" @mouseenter="hoverGoHome"
            @mouseleave="resetMessage"></i>
         <i class="kbnfont kbn-ban-message message"></i>
-        <i class="kbnfont kbn-ban-close close" @click="closeBanNiang" @mouseenter="hoverCloseBanNiang"
+        <i class="kbnfont kbn-ban-close close" @click="closeVisibleRecord" @mouseenter="hoverCloseVisibleRecord"
            @mouseleave="resetMessage"></i>
-        <a target="_blank" href="https://vuepress-theme-idear.recoluan.com/views/plugins/kanbanniang.html">
+        <a target="_blank" href="https://vuepress-theme-idear.recoluan.com/views/plugins/visibleRecord.html">
           <i class="kbnfont kbn-ban-info info" @mouseenter="hoverMoreInfo" @mouseleave="resetMessage"></i>
         </a>
         <i v-show="myTheme.length > 1" class="kbnfont kbn-ban-theme skin" @click="changeTheme"
            @mouseenter="hoverChangeTheme" @mouseleave="resetMessage"></i>
       </div>
       <canvas
-        id="banniang"
+        id="visibleRecord"
         :style="modelStyle"
         :width="style.width"
         :height="style.height"
         class="live2d"
       ></canvas>
     </div>
-    <div class="showBanNiang" v-show="displayBanNiang" @click="showBanNiang">
+    <div class="showVisibleRecord" v-show="displayVisibleRecord" @click="showVisibleRecord">
       看板娘
     </div>
   </div>
@@ -43,7 +43,7 @@ export default {
   data() {
     return {
       isLoaded: true,
-      displayBanNiang: false,
+      displayVisibleRecord: false,
       isShowMessageBox: false,
       isShowBtns: CLEAN,
       messages: {
@@ -100,7 +100,7 @@ export default {
       height: this.myTheme.length > 1 ? '120px' : '100px'
     }
     // 初始化live2d模型
-    this.initBanNiang()
+    this.initVisibleRecord()
   },
   methods: {
     hoverGoHome() {
@@ -112,7 +112,7 @@ export default {
     hoverMoreInfo() {
       this.messages.message = '想知道关于我的更多信息吗？'
     },
-    hoverCloseBanNiang() {
+    hoverCloseVisibleRecord() {
       this.messages.message = this.messages.close
     },
     resetMessage() {
@@ -132,21 +132,21 @@ export default {
       }
       const randomNum = Math.floor(Math.random() * (this.myTheme.length - 1))
       this.currentTheme = themes[randomNum]
-      this.initBanNiang()
+      this.initVisibleRecord()
     },
-    closeBanNiang() {
+    closeVisibleRecord() {
       this.isLoaded = false
-      this.displayBanNiang = true
+      this.displayVisibleRecord = true
     },
-    showBanNiang() {
+    showVisibleRecord() {
       this.isLoaded = true
-      this.displayBanNiang = false
-      this.initBanNiang()
+      this.displayVisibleRecord = false
+      this.initVisibleRecord()
     },
-    initBanNiang() {
+    initVisibleRecord() {
       if (this.themeName.indexOf(this.currentTheme) === -1) {
-        console.log('@idear-vuepress/visibleRecord不支持主题' + this.currentTheme + ', 请检查主题名, 或前往https://vuepress-theme-idear.recoluan.com/views/plugins/kanbanniang.html 查看支持的主题')
-        document.querySelector('.kanbanniang').style.display = 'none'
+        console.log('@idear-vuepress/visibleRecord不支持主题' + this.currentTheme + ', 请检查主题名, 或前往https://vuepress-theme-idear.recoluan.com/views/plugins/visibleRecord.html 查看支持的主题')
+        document.querySelector('.visibleRecord').style.display = 'none'
         return
       }
       const isMobile = !!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -167,11 +167,11 @@ export default {
       ajax.onreadystatechange = function () {
         if (ajax.status !== 200) {
           console.log('看板娘的CDN资源加载失败了，请稍后刷新页面重试！')
-          document.querySelector('.kanbanniang').style.display = 'none'
+          document.querySelector('.visibleRecord').style.display = 'none'
         }
       }
       window.loadlive2d(
-        'banniang',
+        'visibleRecord',
         this.model[this.currentTheme]
       )
     }
@@ -181,7 +181,7 @@ export default {
 
 <style lang="stylus" scoped>
 @require './assets/iconfont/iconfont.css'
-.showBanNiang
+.showVisibleRecord
   position fixed
   right 70px
   bottom 6rem
@@ -197,7 +197,7 @@ export default {
   box-shadow var(--box-shadow)
   background-color var(--background-color)
 
-.banniang-container
+.visibleRecord-container
   position fixed
   right 50px
   bottom 100px
@@ -228,7 +228,7 @@ export default {
       &:hover
         color lighten($accentColor, 50%)
 
-  #banniang
+  #visibleRecord
     z-index 99999
     pointer-events none
     position fixed

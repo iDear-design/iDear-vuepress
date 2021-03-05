@@ -10,7 +10,7 @@
 |使用位置|值|
 |-|-|
 |plugin name|@idear-vuepress/vuepress-plugin-visibleRecord|
-|component name|KanBanNiang（自动出现在页面中，无需添加额外代码）|
+|component name|visibleRecord（自动出现在页面中，无需添加额外代码）|
 
 ## Buttons
 
