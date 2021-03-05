@@ -13,7 +13,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
 
 ::: tip
 
-我们的插件均发布在 `npm` 的组织 `vuepress-idear` 下，所以以下插件默认全称为 `@idear-vuepress/<name>` （比如 `backToTop` 的完整名称为 `@idear-vuepress/backToTop`） ，下面将简写组织内插件名称。
+我们的插件均发布在 `npm` 的组织 `vuepress-idear` 下，所以以下插件默认全称为 `@idear-vuepress/vuepress-plugin-<name>` （比如 `backToTop` 的完整名称为 `@idear-vuepress/vuepress-plugin-backToTop`） ，下面将简写组织内插件名称。
 
 :::
 
@@ -30,7 +30,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
       <a>backToTop</a>
     </td>
     <td>
-      <NpmLink pkg="@idear-vuepress/backToTop"/>
+      <NpmLink pkg="@idear-vuepress/vuepress-plugin-backToTop"/>
     </td>
     <td>✔</td>
     <td>✖</td>
@@ -41,7 +41,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
       <a>pagation</a>
     </td>
     <td>
-      <NpmLink pkg="@idear-vuepress/pagation"/>
+      <NpmLink pkg="@idear-vuepress/vuepress-plugin-pagation"/>
     </td>
     <td>✔</td>
     <td>✖</td>
@@ -52,7 +52,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
       <a>loadingPage</a>
     </td>
     <td>
-      <NpmLink pkg="@idear-vuepress/loadingPage"/>
+      <NpmLink pkg="@idear-vuepress/vuepress-plugin-loadingPage"/>
     </td>
     <td>✔</td>
     <td>✖</td>
@@ -63,7 +63,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
       <a>comments</a>
     </td>
     <td>
-      <NpmLink pkg="@idear-vuepress/comments"/>
+      <NpmLink pkg="@idear-vuepress/vuepress-plugin-comments"/>
     </td>
     <td>✔</td>
     <td>✖</td>
@@ -74,7 +74,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
       <a>rssProduce</a>
     </td>
     <td>
-      <NpmLink pkg="@idear-vuepress/rssProduce"/>
+      <NpmLink pkg="@idear-vuepress/vuepress-plugin-rssProduce"/>
     </td>
     <td>✖</td>
     <td>✔</td>
@@ -85,7 +85,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
         <a>bgmPlayer</a>
       </td>
       <td>
-        <NpmLink pkg="@idear-vuepress/bgmPlayer"/>
+        <NpmLink pkg="@idear-vuepress/vuepress-plugin-bgmPlayer"/>
       </td>
       <td>✖</td>
       <td>✖</td>
@@ -96,7 +96,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
       <a>extractCode</a>
     </td>
     <td>
-      <NpmLink pkg="@idear-vuepress/extractCode"/>
+      <NpmLink pkg="@idear-vuepress/vuepress-plugin-extractCode"/>
     </td>
     <td>✖</td>
     <td>✖</td>
@@ -107,7 +107,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
     <a>visibleRecord</a>
     </td>
     <td>
-    <NpmLink pkg="@idear-vuepress/visibleRecord"/>
+    <NpmLink pkg="@idear-vuepress/vuepress-plugin-visibleRecord"/>
     </td>
     <td>✖</td>
     <td>✖</td>
@@ -118,7 +118,7 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
     <a>screenfull</a>
     </td>
     <td>
-    <NpmLink pkg="@idear-vuepress/screenfull"/>
+    <NpmLink pkg="@idear-vuepress/vuepress-plugin-screenfull"/>
     </td>
     <td>✖</td>
     <td>✖</td>
@@ -216,7 +216,7 @@ module.exports = {
 ```javascript
 module.exports = {
   plugins: [
-    ["@idear-vuepress/backToTop", false] // disabled.
+    ["@idear-vuepress/vuepress-plugin-backToTop", false] // disabled.
   ]
 };
 ```
