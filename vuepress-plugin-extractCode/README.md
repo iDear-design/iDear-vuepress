@@ -1,4 +1,4 @@
-# @idear-vuepress/extractCode
+# @idear-vuepress/vuepress-plugin-extractCode
 
 ## Introduce
 
@@ -8,7 +8,7 @@ Features and code presentation plugin forvuepress-theme-idear or other vuepress 
 
 ### Name
 
-- **As plugin**: `@idear-vuepress/extractCode`
+- **As plugin**: `@idear-vuepress/vuepress-plugin-extractCode`
 
 ## Usage
 
@@ -17,7 +17,7 @@ Features and code presentation plugin forvuepress-theme-idear or other vuepress 
 ```js
 module.exports = {
   plugins: [
-    '@idear-vuepress/extractCode'
+    '@idear-vuepress/vuepress-plugin-extractCode'
   ]
 }
 ```
