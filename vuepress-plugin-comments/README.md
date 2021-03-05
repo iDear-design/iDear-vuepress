@@ -34,7 +34,7 @@ module.exports = {
 ```javscript
 module.exports = {
   theme: 'idear',
-  plugins: [['@idear-vuepress/comments', {
+  plugins: [['@idear-vuepress/vuepress-plugin-comments', {
     solution: 'valine',
     options: {
       appId: '...',// your appId
@@ -68,7 +68,7 @@ module.exports = {
 ```javscript
 module.exports = {
   theme: 'idear',
-  plugins: [['@idear-vuepress/comments', {
+  plugins: [['@idear-vuepress/vuepress-plugin-comments', {
     solution: 'vuess',
     options: {
       platform: 'github',
