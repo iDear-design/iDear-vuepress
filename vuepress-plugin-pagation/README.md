@@ -6,10 +6,7 @@
 
 > Pagation plugin for vuepress-theme-idear or other vuepress theme.
 
-|使用位置|值|
-|-|-|
-|plugin name|@idear-vuepress/vuepress-plugin-pagation|
-|component name|Pagation（主题开发时使用）|
+|使用位置|值| |-|-| |plugin name|@idear-vuepress/vuepress-plugin-pagation| |component name|Pagation（主题开发时使用）|
 
 ## Options
 
@@ -18,7 +15,7 @@
 **Attributes**
 
 |参数|说明|类型|默认值|可选值|
-|-|-|-|-|-|
+|----|----|----|----|----|
 |total|数据总数量|number|10|-|
 |perPage|每页多少条|number|10|-|
 |currentPage|当前是第几页|number|1|-|
@@ -26,6 +23,6 @@
 **Events**
 
 |事件名称|说明|回调参数|
-|-|-|-|
+|----|----|----|
 |getCurrentPage|获取当前是第几页|currentPage: 当前页码|
 

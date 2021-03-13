@@ -1,4 +1,3 @@
-
 ## 插件是什么
 
 VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅可以应用一个喜欢的主题，而且可以自己去选择一些插件来丰富你的博客或者文档内容，搭建一个属于你自己的静态网站。
@@ -13,7 +12,8 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
 
 ::: tip
 
-我们的插件均发布在 `npm` 的组织 `vuepress-idear` 下，所以以下插件默认全称为 `@idear-vuepress/vuepress-plugin-<name>` （比如 `backToTop` 的完整名称为 `@idear-vuepress/vuepress-plugin-backToTop`） ，下面将简写组织内插件名称。
+我们的插件均发布在 `npm` 的组织 `vuepress-idear` 下，所以以下插件默认全称为 `@idear-vuepress/vuepress-plugin-<name>` （比如 `backToTop`
+的完整名称为 `@idear-vuepress/vuepress-plugin-backToTop`） ，下面将简写组织内插件名称。
 
 :::
 
@@ -24,6 +24,17 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
     <th style="width:20px">是否内置</th>
     <th style="width:20px">是否主题独占</th>
     <th style="width:100px">描述</th>
+  </tr>
+  <tr>
+    <td>
+      <a>notification</a>
+    </td>
+    <td>
+      <NpmLink pkg="@idear-vuepress/vuepress-plugin-notification"/>
+    </td>
+    <td>✔</td>
+    <td>✖</td>
+    <td>提示插件</td>
   </tr>
   <tr>
     <td>
@@ -131,10 +142,10 @@ VuePress 自 `1.0` 版本开始对插件进行了支持，这使得我们不仅�
 - 只有**内置插件**是在安装主题时安装并配置好的，非内置插件（比如 visibleRecord 插件）需要你自行安装并配置。
 - 为了使得主题更加定制化，我们开发了一些本**主题独占**的插件（比如 rss 插件），由于和主题之间存在强耦合，所以这些插件**在其他主题可能不会正常工作**。
 
-
 ### npm 中的 VuePress 插件生态
 
-如果你想额外添加一些自己喜欢的插件，你可以[在 npm 中搜索 `vuepress-plugin`](https://www.npmjs.com/search?q=vuepress-plugin) 前缀来查看当前 VuePress 社区中已经开发的插件，之后使用 npm 或者 yarn [下载](#插件的下载)并在 `.vuepress/config.js` 中[配置](#简单使用插件)以启用它们。
+如果你想额外添加一些自己喜欢的插件，你可以[在 npm 中搜索 `vuepress-plugin`](https://www.npmjs.com/search?q=vuepress-plugin) 前缀来查看当前 VuePress
+社区中已经开发的插件，之后使用 npm 或者 yarn [下载](#插件的下载)并在 `.vuepress/config.js` 中[配置](#简单使用插件)以启用它们。
 
 ## 插件怎么用
 

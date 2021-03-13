@@ -8,7 +8,7 @@
 > Vuepress 音乐播放器插件
 
 |使用位置|值|
-|-|-|
+|----|----|
 |plugin name|@idear-vuepress/vuepress-plugin-bgmPlayer|
 |component name|BgMusic（自动出现在页面中，无需添加额外代码）|
 
@@ -19,14 +19,13 @@
 ### Attributes
 
 |参数|说明|类型|默认值|可选值|
-|-|-|-|-|-|
+|----|----|----|----|----|
 |audios|播放列表|Array|无|-|
 |position|播放器位置|Object|{ left: '10px', bottom: '10px', 'z-index': '999999'}|-|
 |autoShrink|是否自动缩小|Boolean|false|true/false|
 |shrinkMode|指定PC端缩小为哪种模式|String|'float'|'mini'/'float'|
 |floatPosition|指定浮窗模式浮动在哪一侧|String|'left'|'left'/'right'|
 |floatStyle|浮窗的样式|Object|{ bottom: '200px', 'z-index': '999999' }|-|
-
 
 ### audios示例
 
@@ -57,6 +56,7 @@
     }
   ]  
   ```
+
 ### shrinkMode说明
 
 - PC端可以通过shrinkMode来指定缩小时缩为哪种模式
