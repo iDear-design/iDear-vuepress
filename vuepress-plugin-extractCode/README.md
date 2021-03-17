@@ -126,7 +126,7 @@ module.exports = {
 <RecoDemo :collapse="true">
   <template slot="code-js">
     <pre>
-      console.log(`I'm reco_luan.`)
+      console.log(`I'm maxiaoqu.`)
     </pre>
   </template>
 </RecoDemo>
