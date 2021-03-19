@@ -1,20 +1,24 @@
 <template>
   <div class="idear-bgm-panel">
     <!-- 播放器 -->
-    <audio id="bgm" :src="audio[curIndex].url" ref="bgm" @ended="bgmEnded" @canplay="playReady" @timeupdate="timeUpdate"></audio>
+    <audio id="bgm" :src="audio[curIndex].url" ref="bgm" @ended="bgmEnded" @canplay="playReady"
+           @timeupdate="timeUpdate"></audio>
     <module-transition :position="floatPosition">
       <div v-show="isFloat" @click="changeBgmInfo(false)" class="idear-float-box" :style="floatStyle">
-        <img :src="audio[curIndex].cover">
+        <img class="idear-bgm-cover" :src="audio[curIndex].cover">
       </div>
     </module-transition>
     <module-transition>
       <div class="idear-bgm-box" v-show="!isFloat" :style="panelPosition">
         <!-- 封面 -->
-        <div class="idear-bgm-cover" @click="changeBgmInfo(false)" :style="`background-image:url(${audio[curIndex].cover})`">
+        <div class="idear-bgm-cover" @click="changeBgmInfo(false)"
+             :style="`background-image:url(${audio[curIndex].cover})`">
           <!-- mini操作栏 -->
           <div v-show="isMini" class="mini-operation">
-            <i v-show="this.curPlayStatus === 'playing' && isMini" @click.stop="pauseBgm" class="idear-bgm idear-bgm-pause"></i>
-            <i v-show="this.curPlayStatus === 'paused' && isMini" @click.stop="playBgm" class="idear-bgm idear-bgm-play"></i>
+            <i v-show="this.curPlayStatus === 'playing' && isMini" @click.stop="pauseBgm"
+               class="idear-bgm idear-bgm-pause"></i>
+            <i v-show="this.curPlayStatus === 'paused' && isMini" @click.stop="playBgm"
+               class="idear-bgm idear-bgm-play"></i>
           </div>
           <!-- 错误信息显示 -->
           <div v-show="isFault" class="falut-message">
@@ -38,7 +42,8 @@
             <div class="idear-bgm-operation">
               <i class="idear-bgm idear-bgm-last last" @click="playLast"></i>
               <i v-show="curPlayStatus === 'playing'" @click="pauseBgm" class="idear-bgm idear-bgm-pause pause"></i>
-              <i v-show="curPlayStatus === 'paused'" ref="play" @click="playBgm" class="idear-bgm idear-bgm-play play"></i>
+              <i v-show="curPlayStatus === 'paused'" ref="play" @click="playBgm"
+                 class="idear-bgm idear-bgm-play play"></i>
               <i class="idear-bgm idear-bgm-next next" @click="playNext"></i>
               <i v-show="!isMute" @click="muteBgm" class="idear-bgm idear-bgm-volume1 volume"></i>
               <i v-show="isMute" @click="unMuteBgm" class="idear-bgm idear-bgm-mute mute"></i>
@@ -51,7 +56,7 @@
         <!-- 缩放按钮 -->
         <module-transition duration=".15">
           <div v-show="!isMini" @click="changeBgmInfo(true)" class="idear-bgm-left-box">
-            <i class="idear-bgm idear-bgm-left" ></i>
+            <i class="idear-bgm idear-bgm-left"></i>
           </div>
         </module-transition>
       </div>
@@ -63,8 +68,9 @@
 let InterVal
 // 歌曲封面的旋转角度
 let rotateVal = 0
+
 // 歌曲封面的旋转
-function rotate () {
+function rotate() {
   InterVal = setInterval(function () {
     const cover = document.querySelector('.idear-bgm-cover')
     const btn = document.querySelector('.mini-operation')
@@ -84,14 +90,16 @@ function rotate () {
     fm.style.transition = '0.1s linear'
   }, 100)
 }
+
 import volume from './mixins/volume.js'
 import ModuleTransition from './ModuleTransition'
+
 export default {
   mixins: [volume],
   components: {
     ModuleTransition
   },
-  mounted () {
+  mounted() {
     if (this.floatPosition === 'left') {
       this.floatStyle = {
         ...this.floatStyle,
@@ -110,7 +118,7 @@ export default {
     // autoShrink时隐藏歌曲信息
     if (this.autoShrink) this.changeBgmInfo(true)
   },
-  data () {
+  data() {
     return {
       panelPosition: POSITION,
       curIndex: 0,
@@ -139,7 +147,7 @@ export default {
   },
   methods: {
     // 显示或隐藏歌曲信息
-    changeBgmInfo (bool) {
+    changeBgmInfo(bool) {
       const isMobile = !!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
         navigator.userAgent
       )
@@ -150,7 +158,7 @@ export default {
       }
     },
     // audio canplay回调事件
-    playReady () {
+    playReady() {
       // 第一次加载时初始化音量条并处理自动播放事件
       if (this.firstLoad) {
         if (this.getVolume()) {
@@ -179,19 +187,19 @@ export default {
       }
     },
     // 暂停
-    pauseBgm () {
+    pauseBgm() {
       this.$refs.bgm.pause()
       this.curPlayStatus = 'paused'
     },
     // 播放
-    playBgm () {
+    playBgm() {
       const playPromise = this.$refs.bgm.play()
       if (playPromise !== undefined) {
         playPromise.then(res => {
           if (this.isFault) {
             this.isFault = false
           }
-        // eslint-disable-next-line handle-callback-err
+          // eslint-disable-next-line handle-callback-err
         }).catch(err => {
           console.log(err)
           // 播放异常时显示播放失败并暂停播放
@@ -203,7 +211,7 @@ export default {
       this.curPlayStatus = 'playing'
     },
     // 播放下一首
-    playNext () {
+    playNext() {
       this.$refs.pbar.style.width = 0
       this.isFault = false
       if (this.curIndex >= this.audio.length - 1) {
@@ -213,7 +221,7 @@ export default {
       }
     },
     // 播放上一首
-    playLast () {
+    playLast() {
       this.$refs.pbar.style.width = 0
       this.isFault = false
       if (this.curIndex <= 0) {
@@ -223,19 +231,19 @@ export default {
       }
     },
     // bgm结束时自动下一首
-    bgmEnded () {
+    bgmEnded() {
       this.$refs.pbar.style.width = 0
       this.playNext()
     },
     // 更新歌曲进度条
-    timeUpdate () {
+    timeUpdate() {
       const total_time = this.$refs.bgm.duration
       const cur_time = this.$refs.bgm.currentTime
       const bar_width = cur_time / total_time * 100 + '%'
       this.$refs.pbar.style.width = bar_width
     },
     // 点击进度条跳播
-    progressJump (e) {
+    progressJump(e) {
       const total_time = this.$refs.bgm.duration
       const percent = e.offsetX / 150
       // 歌曲未加载完成时点击进度条的错误处理
@@ -243,7 +251,7 @@ export default {
       this.$refs.bgm.currentTime = percent * total_time
     },
     // 点击音量条修改音量
-    volumeJump (e) {
+    volumeJump(e) {
       const percent = e.offsetX / 57
       if (percent >= 0 && percent <= 1) {
         this.isMute = !(percent > 0)
@@ -253,14 +261,14 @@ export default {
       }
     },
     // 静音
-    muteBgm () {
+    muteBgm() {
       this.isMute = true
       this.setVolume(this.$refs.bgm.volume)
       this.$refs.vbar.style.width = 0
       this.$refs.bgm.volume = 0
     },
     // 取消静音
-    unMuteBgm () {
+    unMuteBgm() {
       this.isMute = false
       if (this.getVolume()) {
         const percent = this.getVolume()
